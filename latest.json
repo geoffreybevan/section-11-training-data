@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-11T14:25:32.573990",
+    "last_updated": "2026-03-11T15:10:08.437438",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -325,7 +325,7 @@
         "stream_2": {
           "planned_tss_delta": 1.23,
           "hard_sessions_planned": 2,
-          "race_proximity": null,
+          "race_proximity": 32,
           "next_week_load": 1.25,
           "plan_coverage_current_week": 1.2,
           "plan_coverage_next_week": 1.4
@@ -363,7 +363,7 @@
     "p_max": 1363,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-11T14:25:32.573295",
+    "calculation_timestamp": "2026-03-11T15:10:08.436716",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1165,6 +1165,17 @@
       "duration_formatted": "2h50m",
       "workout_summary": null,
       "description_preview": "- 20m 55% 90rpm\n- 15m 60% 90rpm\n- 60m 65% 90rpm"
+    },
+    {
+      "id": 97871145,
+      "date": "2026-04-12",
+      "name": "Grand Prix Cycliste Ste-Martine 2026",
+      "type": "RACE_B",
+      "planned_tss": null,
+      "duration_hours": 0.0,
+      "duration_formatted": "0s",
+      "workout_summary": null,
+      "description_preview": null
     }
   ],
   "workout_summary_stats": {
@@ -1184,8 +1195,26 @@
     "avg_resting_hr": 47.0
   },
   "race_calendar": {
-    "next_race": null,
-    "all_races": [],
+    "next_race": {
+      "name": "Grand Prix Cycliste Ste-Martine 2026",
+      "date": "2026-04-12",
+      "category": "RACE_B",
+      "type": "Ride",
+      "days_until": 32,
+      "moving_time_seconds": null,
+      "distance_meters": null
+    },
+    "all_races": [
+      {
+        "name": "Grand Prix Cycliste Ste-Martine 2026",
+        "date": "2026-04-12",
+        "category": "RACE_B",
+        "type": "Ride",
+        "days_until": 32,
+        "moving_time_seconds": null,
+        "distance_meters": null
+      }
+    ],
     "taper_alert": {
       "active": false
     },
