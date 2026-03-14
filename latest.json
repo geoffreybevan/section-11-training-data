@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-14T15:46:26.711110",
+    "last_updated": "2026-03-14T16:15:43.204288",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -124,6 +124,12 @@
     "total_duration_decimal_hours": 13.93,
     "total_activities": 10,
     "by_activity_type": {
+      "Other": {
+        "duration_decimal_hours": 0.79,
+        "count": 1,
+        "tss": 37,
+        "distance_km": 2.9
+      },
       "Ride": {
         "duration_decimal_hours": 0.83,
         "count": 1,
@@ -135,12 +141,6 @@
         "count": 6,
         "tss": 457,
         "distance_km": 232.4
-      },
-      "Walk": {
-        "duration_decimal_hours": 0.79,
-        "count": 1,
-        "tss": 37,
-        "distance_km": 2.9
       },
       "WeightTraining": {
         "duration_decimal_hours": 2.69,
@@ -393,7 +393,7 @@
     "p_max": 1363,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-14T15:46:26.710275",
+    "calculation_timestamp": "2026-03-14T16:15:43.203576",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -410,8 +410,8 @@
     {
       "id": "i131838102",
       "date": "2026-03-13T22:05:54",
-      "type": "Walk",
-      "name": "Training Session",
+      "type": "Other",
+      "name": "Still practice",
       "duration_hours": 0.79,
       "distance_km": 2.86,
       "tss": 37,
