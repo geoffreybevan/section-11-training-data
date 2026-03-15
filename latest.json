@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-15T21:16:12.556854",
+    "last_updated": "2026-03-15T21:47:06.028213",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -378,7 +378,7 @@
     "p_max": 1363,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-15T21:16:12.555964",
+    "calculation_timestamp": "2026-03-15T21:47:06.027425",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1059,7 +1059,7 @@
       "duration_hours": 1.48,
       "duration_formatted": "1h29m",
       "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d720m @300W / 4m rec",
-      "description": "Warmup\n- 5m 55% 90rpm\n- 4m 65% 90rpm\n- 3m 75% 90rpm\n- 2m 85% 90rpm\n- 1m 95% 95rpm\n- 2m 55% 90rpm\n\n3x\n- 20m 91% 90rpm\n- 4m 50% 85rpm"
+      "description": "Warmup\n- 5m 55% 90rpm\n- 4m 65% 90rpm\n- 3m 75% 90rpm\n- 2m 85% 90rpm\n- 1m 95% 95rpm\n- 2m 55% 90rpm\n\n3x\n- 20m 91% 90-100rpm\n- 4m 50% 85-95rpm"
     },
     {
       "id": 98289787,
@@ -1078,10 +1078,10 @@
       "name": "Threshold 3x15",
       "type": "WORKOUT",
       "planned_tss": 106,
-      "duration_hours": 1.48,
-      "duration_formatted": "1h29m",
+      "duration_hours": 1.49,
+      "duration_formatted": "1h29m30s",
       "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d715m @320W / 7m30s rec | 5m @156W",
-      "description": "Warmup\n- 5m 55% 90rpm\n- 4m 65% 90rpm\n- 3m 75% 90rpm\n- 2m 85% 90rpm\n- 1m 95% 95rpm\n- 2m 55% 90rpm\n \n3x\n- 15m 97% 90rpm\n- 7m30s 50% 85rpm\n\n- 5m ramp 50-45% 90rpm"
+      "description": "Warmup\n- 5m 55% 90rpm\n- 4m 65% 90rpm\n- 3m 75% 90rpm\n- 2m 85% 90rpm\n- 1m 95% 95rpm\n- 2m 55% 90rpm\n \n3x\n- 15m 97% 90-100rpm\n- 7m30s 50% 85-95rpm\n\n- 5m ramp 50-45% 85-95rpm"
     },
     {
       "id": 98289789,
@@ -1114,7 +1114,7 @@
       "duration_hours": 1.07,
       "duration_formatted": "1h4m",
       "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 1m @346W | 2m @181W | 6\u00d71m @445W / 1m rec | 10m @165W | 6\u00d71m @445W / 1m rec | 10m @156W",
-      "description": "Warmup\n- 5m 55% 90rpm\n- 4m 65% 90rpm\n- 3m 75% 90rpm\n- 2m 85% 90rpm\n- 1m 95% 95rpm\n- 2m 55% 90rpm\n- 1m 105% 100rpm\n- 2m 55% 90rpm\n\n6x\n- 1m 135% 90rpm\n- 1m 50% 90rpm\n\n-10m 50% 90rpm\n\n6x\n- 1m 135% 90rpm\n- 1m 50% 90rpm\n\nCooldown\n- 10m ramp 50-45% 90rpm"
+      "description": "Warmup\n- 5m 55% 90rpm\n- 4m 65% 90rpm\n- 3m 75% 90rpm\n- 2m 85% 90rpm\n- 1m 95% 95rpm\n- 2m 55% 90rpm\n- 1m 105% 100rpm\n- 2m 55% 90rpm\n\n6x\n- 1m 135% 95-105rpm\n- 1m 50% 85-95rpm\n\n-10m 50% 85-95rpm\n\n6x\n- 1m 135% 95-105rpm\n- 1m 50% 85-95rpm\n\nCooldown\n- 10m ramp 50-45% 85-95rpm"
     },
     {
       "id": 93662806,
