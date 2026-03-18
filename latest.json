@@ -9,13 +9,13 @@
     "quick_stats": {
       "total_training_hours": 14.11,
       "total_training_formatted": "14h6m",
-      "total_activities": 12,
-      "total_tss": 579
+      "total_activities": 11,
+      "total_tss": 580
     }
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-18T11:55:59.927965",
+    "last_updated": "2026-03-18T12:43:15.085658",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -23,10 +23,10 @@
   "alerts": [
     {
       "metric": "monotony",
-      "value": 2.44,
+      "value": 2.43,
       "severity": "warning",
       "threshold": 2.3,
-      "context": "Monotony 2.44 approaching overuse threshold. Alarm at 2.5. (total monotony 3.78 inflated by multi-sport training; cycling monotony 2.44 used for alerting)",
+      "context": "Monotony 2.43 approaching overuse threshold. Alarm at 2.5. (total monotony 3.76 inflated by multi-sport training; cycling monotony 2.43 used for alerting)",
       "persistence_days": null,
       "tier": 2
     },
@@ -63,7 +63,7 @@
       },
       "acwr": {
         "status": "green",
-        "value": 1.0
+        "value": 1.01
       },
       "feel": {
         "status": "unavailable",
@@ -75,7 +75,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": -12.0
+        "value": -12.1
       }
     },
     "signal_summary": {
@@ -106,7 +106,7 @@
     "period_description": "Last 7 days of training (including today)",
     "note": "Duration calculated from API moving_time field.",
     "total_duration_decimal_hours": 14.11,
-    "total_activities": 12,
+    "total_activities": 11,
     "by_activity_type": {
       "IceSkate": {
         "duration_decimal_hours": 0.93,
@@ -121,16 +121,16 @@
         "distance_km": 2.9
       },
       "Ride": {
-        "duration_decimal_hours": 2.01,
-        "count": 1,
-        "tss": 65,
-        "distance_km": 58.7
+        "duration_decimal_hours": 3.5,
+        "count": 2,
+        "tss": 171,
+        "distance_km": 113.0
       },
       "VirtualRide": {
-        "duration_decimal_hours": 7.73,
-        "count": 7,
-        "tss": 430,
-        "distance_km": 227.3
+        "duration_decimal_hours": 6.24,
+        "count": 5,
+        "tss": 325,
+        "distance_km": 173.0
       },
       "WeightTraining": {
         "duration_decimal_hours": 2.65,
@@ -142,10 +142,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 72.68,
-      "atl": 84.7,
-      "tsb": -12.02,
-      "ramp_rate": 0.68,
+      "ctl": 72.7,
+      "atl": 84.83,
+      "tsb": -12.13,
+      "ramp_rate": 0.7,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -198,20 +198,20 @@
     "rhr_baseline_28d": 45.4,
     "latest_hrv": 97.0,
     "latest_rhr": 49,
-    "acwr": 1.0,
+    "acwr": 1.01,
     "acwr_interpretation": "optimal",
-    "monotony": 3.78,
-    "monotony_interpretation": "elevated (primary sport 2.44, total 3.78 inflated by multi-sport)",
+    "monotony": 3.76,
+    "monotony_interpretation": "elevated (primary sport 2.43, total 3.76 inflated by multi-sport)",
     "primary_sport": "cycling",
-    "primary_sport_monotony": 2.44,
-    "primary_sport_tss_7d": 495.0,
-    "effective_monotony": 2.44,
+    "primary_sport_monotony": 2.43,
+    "primary_sport_tss_7d": 496.0,
+    "effective_monotony": 2.43,
     "multi_sport_detected": true,
-    "strain": 2189.0,
+    "strain": 2181.0,
     "stress_tolerance": 5.8,
     "load_recovery_ratio": 5.6,
-    "tss_7d_total": 579.0,
-    "tss_28d_total": 2306.0,
+    "tss_7d_total": 580.0,
+    "tss_28d_total": 2307.0,
     "zone_distribution_7d": {
       "z1_hours": 7.27,
       "z2_hours": 4.33,
@@ -384,12 +384,12 @@
     "p_max": 1363,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-18T11:55:59.927208",
+    "calculation_timestamp": "2026-03-18T12:43:15.084915",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
-      "activities_7d": 12,
-      "activities_28d": 43,
+      "activities_7d": 11,
+      "activities_28d": 42,
       "planned_workouts_7d": 7,
       "ftp_history_days": {
         "indoor": 0,
@@ -399,102 +399,51 @@
   },
   "recent_activities": [
     {
-      "id": "i132970088",
-      "date": "2026-03-18T07:19:37",
-      "type": "VirtualRide",
-      "name": "Ride Cave: Volta ao Algarve 2026 Stage 1",
-      "duration_hours": 0.4,
-      "distance_km": 13.18,
-      "tss": 27,
-      "intensity_factor": 81.51515,
-      "avg_power": 238,
-      "normalized_power": 269,
+      "id": "i132978255",
+      "date": "2026-03-18T06:09:24",
+      "type": "Ride",
+      "name": "Training Session",
+      "duration_hours": 1.49,
+      "distance_km": 54.29,
+      "tss": 106,
+      "intensity_factor": 84.242424,
+      "avg_power": 253,
+      "normalized_power": 278,
       "avg_hr": 146,
       "max_hr": 171,
-      "avg_cadence": 92.8091,
-      "avg_speed": 32.7,
-      "max_speed": 42.1,
+      "avg_cadence": 93.61723,
+      "avg_speed": 36.4,
+      "max_speed": 56.5,
       "avg_pace": null,
       "avg_temp": null,
       "weather": null,
       "humidity": null,
       "wind_speed": null,
-      "work_kj": 345.4,
-      "calories": 342,
-      "carbs_used": 113,
-      "carbs_ingested": null,
-      "variability_index": 1.1302521,
-      "decoupling": 33.694042,
-      "efficiency_factor": 1.8424658,
+      "work_kj": 1359.8,
+      "calories": 1477,
+      "carbs_used": 278,
+      "carbs_ingested": 90,
+      "variability_index": 1.0988142,
+      "decoupling": 4.3147326,
+      "efficiency_factor": 1.9041096,
       "hrrc": null,
-      "elevation_m": 125.200005,
+      "elevation_m": 323.40002,
       "feel": null,
       "rpe": null,
       "zone_distribution": {
         "hr_zones": {
-          "z1_time": 25,
-          "z2_time": 622,
-          "z3_time": 128,
-          "z4_time": 676,
+          "z1_time": 257,
+          "z2_time": 1806,
+          "z3_time": 849,
+          "z4_time": 2462,
           "z5_time": 0
         },
         "power_zones": {
-          "z1_time": 752,
-          "z2_time": 3,
-          "z3_time": 3,
-          "z4_time": 688,
+          "z1_time": 1806,
+          "z2_time": 600,
+          "z3_time": 228,
+          "z4_time": 2735,
           "z5_time": 5,
-          "z6_time": 0,
-          "z7_time": 0
-        }
-      }
-    },
-    {
-      "id": "i132961946",
-      "date": "2026-03-18T06:09:24",
-      "type": "VirtualRide",
-      "name": "Ride Cave: Volta ao Algarve 2026 Stage 1",
-      "duration_hours": 1.09,
-      "distance_km": 41.11,
-      "tss": 78,
-      "intensity_factor": 84.84849,
-      "avg_power": 259,
-      "normalized_power": 280,
-      "avg_hr": 146,
-      "max_hr": 168,
-      "avg_cadence": 93.91614,
-      "avg_speed": 37.7,
-      "max_speed": 57.1,
-      "avg_pace": null,
-      "avg_temp": null,
-      "weather": null,
-      "humidity": null,
-      "wind_speed": null,
-      "work_kj": 1014.4,
-      "calories": 1016,
-      "carbs_used": 212,
-      "carbs_ingested": null,
-      "variability_index": 1.081081,
-      "decoupling": -4.246711,
-      "efficiency_factor": 1.9178082,
-      "hrrc": null,
-      "elevation_m": 198.20003,
-      "feel": null,
-      "rpe": null,
-      "zone_distribution": {
-        "hr_zones": {
-          "z1_time": 232,
-          "z2_time": 1184,
-          "z3_time": 721,
-          "z4_time": 1786,
-          "z5_time": 0
-        },
-        "power_zones": {
-          "z1_time": 1053,
-          "z2_time": 598,
-          "z3_time": 225,
-          "z4_time": 2047,
-          "z5_time": 0,
           "z6_time": 0,
           "z7_time": 0
         }
@@ -1176,8 +1125,8 @@
   "weekly_summary": {
     "total_training_hours": 14.11,
     "total_training_formatted": "14h6m",
-    "total_tss": 579,
-    "activities_count": 12,
+    "total_tss": 580,
+    "activities_count": 11,
     "avg_hrv": 92.7,
     "avg_resting_hr": 48.0
   },
