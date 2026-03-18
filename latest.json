@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-18T12:43:15.085658",
+    "last_updated": "2026-03-18T14:06:07.488179",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -98,7 +98,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-03-11",
-    "age_days": 6,
+    "age_days": 7,
     "total_months": 13,
     "history_confidence": "high"
   },
@@ -347,9 +347,9 @@
           "planned_tss_delta": 1.22,
           "hard_sessions_planned": 2,
           "race_proximity": 25,
-          "next_week_load": null,
+          "next_week_load": 1.11,
           "plan_coverage_current_week": 1.0,
-          "plan_coverage_next_week": 0.0
+          "plan_coverage_next_week": 1.4
         },
         "data_quality": "good",
         "stream_agreement": null
@@ -384,7 +384,7 @@
     "p_max": 1363,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-18T12:43:15.084915",
+    "calculation_timestamp": "2026-03-18T14:06:07.487405",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1103,6 +1103,219 @@
       "description": "- 15m 55% 90-100rpm\n- 20m 60% 90-100rpm\n- 2m 72.5%\n- 3m 50% 90-100rpm\n- 20m 52.5% 90-100rpm\n- 15m 62.5% 90-100rpm\n- 2m 72.5%\n- 3m 50% 90-100rpm\n- 15m 65% 90-100rpm\n- 10m 55% 90-100rpm\n- 25m 60% 90-100rpm\n- 2m 72.5%\n- 3m 50% 90-100rpm\n- 25m 50% 90-100rpm\n- 2m 72.5%\n- 3m 50% 90-100rpm\n- 7m 69% 90-100rpm\n- 8m 50% 90-100rpm"
     },
     {
+      "id": 99297361,
+      "date": "2026-03-23",
+      "name": "Sweet Spot 3x15",
+      "type": "WORKOUT",
+      "planned_tss": 91,
+      "duration_hours": 1.35,
+      "duration_formatted": "1h21m",
+      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d715m @303W / 3m rec | 10m @156W",
+      "description": "- 5m 55% 90rpm\n- 4m 65% 90rpm\n- 3m 75% 90rpm\n- 2m 85% 90rpm\n- 1m 95% 95rpm\n- 2m 55% 90rpm\n\n3x\n- 15m 92% 90-100rpm\n- 3m 50% 85rpm\n\n- 10m ramp 50-45%"
+    },
+    {
+      "id": 99297362,
+      "date": "2026-03-24",
+      "name": "Aerobic Support Ride",
+      "type": "WORKOUT",
+      "planned_tss": 40,
+      "duration_hours": 1.17,
+      "duration_formatted": "1h10m",
+      "workout_summary": null,
+      "description": "- 5m 50% 90-100rpm\n- 5m 57.5% 90-100rpm\n- 10m 52.5% 90-100rpm\n- 5m 60% 90-100rpm\n- 10m 55% 90-100rpm\n- 5m 65% 90-100rpm\n- 10m 62.5% 90-100rpm\n- 5m 70% 90-100rpm\n- 5m 67.5% 90-100rpm\n- 10m 47.5% 90-100rpm"
+    },
+    {
+      "id": 99297364,
+      "date": "2026-03-25",
+      "name": "Threshold 4x8",
+      "type": "WORKOUT",
+      "planned_tss": 88,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
+      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 4\u00d78m @330W / 4m rec | 10m @156W",
+      "description": "- 5m 55% 90rpm\n- 4m 65% 90rpm\n- 3m 75% 90rpm\n- 2m 85% 90rpm\n- 1m 95% 95rpm\n- 2m 55% 90rpm\n\n4x\n- 8m 100% 90-100rpm\n- 4m 50% 85rpm\n\n- 10m ramp 50-45%"
+    },
+    {
+      "id": 99297365,
+      "date": "2026-03-26",
+      "name": "Easy Circulation Spin",
+      "type": "WORKOUT",
+      "planned_tss": 33,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "description_preview": "- 15m 55% 90-100rpm\n- 30m 61% 90-100rpm\n- 15m 50% 90-100rpm"
+    },
+    {
+      "id": 99297366,
+      "date": "2026-03-27",
+      "name": "Aerobic Base + Late Load",
+      "type": "WORKOUT",
+      "planned_tss": 64,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "- 10m 55% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67.5% 90-100rpm"
+    },
+    {
+      "id": 99297368,
+      "date": "2026-03-28",
+      "name": "VO2 6x3",
+      "type": "WORKOUT",
+      "planned_tss": 78,
+      "duration_hours": 1.05,
+      "duration_formatted": "1h3m",
+      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 6\u00d73m @379W / 3m rec | 10m @156W"
+    },
+    {
+      "id": 99297369,
+      "date": "2026-03-29",
+      "name": "Long Ride",
+      "type": "WORKOUT",
+      "planned_tss": 103,
+      "duration_hours": 3.0,
+      "duration_formatted": "3h",
+      "workout_summary": null,
+      "description_preview": "- 15m 55% 90-100rpm\n- 20m 60% 90-100rpm\n- 2m 72.5%"
+    },
+    {
+      "id": 99297370,
+      "date": "2026-03-30",
+      "name": "Sweet Spot 3x20",
+      "type": "WORKOUT",
+      "planned_tss": 106,
+      "duration_hours": 1.48,
+      "duration_formatted": "1h29m",
+      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d720m @300W / 4m rec"
+    },
+    {
+      "id": 99297371,
+      "date": "2026-03-31",
+      "name": "Aerobic Support Ride",
+      "type": "WORKOUT",
+      "planned_tss": 40,
+      "duration_hours": 1.17,
+      "duration_formatted": "1h10m",
+      "workout_summary": null,
+      "description_preview": "- 5m 50% 90-100rpm\n- 5m 57.5% 90-100rpm\n- 10m 52.5% 90-100rpm"
+    },
+    {
+      "id": 99297373,
+      "date": "2026-04-01",
+      "name": "Threshold 3x12",
+      "type": "WORKOUT",
+      "planned_tss": 90,
+      "duration_hours": 1.27,
+      "duration_formatted": "1h16m",
+      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d712m @323W / 6m rec | 5m @156W"
+    },
+    {
+      "id": 99297374,
+      "date": "2026-04-02",
+      "name": "Easy Circulation Spin",
+      "type": "WORKOUT",
+      "planned_tss": 33,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "description_preview": "- 15m 55% 90-100rpm\n- 30m 61% 90-100rpm\n- 15m 50% 90-100rpm"
+    },
+    {
+      "id": 99297375,
+      "date": "2026-04-03",
+      "name": "Aerobic Base + Late Load",
+      "type": "WORKOUT",
+      "planned_tss": 64,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "- 10m 55% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67.5% 90-100rpm"
+    },
+    {
+      "id": 99297376,
+      "date": "2026-04-04",
+      "name": "VO2 5x4",
+      "type": "WORKOUT",
+      "planned_tss": 82,
+      "duration_hours": 1.12,
+      "duration_formatted": "1h7m",
+      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 5\u00d74m @369W / 4m rec | 10m @156W"
+    },
+    {
+      "id": 99297377,
+      "date": "2026-04-05",
+      "name": "Long Ride",
+      "type": "WORKOUT",
+      "planned_tss": 103,
+      "duration_hours": 3.0,
+      "duration_formatted": "3h",
+      "workout_summary": null,
+      "description_preview": "- 15m 55% 90-100rpm\n- 20m 60% 90-100rpm\n- 2m 72.5%"
+    },
+    {
+      "id": 99297378,
+      "date": "2026-04-06",
+      "name": "Sweet Spot 2x25",
+      "type": "WORKOUT",
+      "planned_tss": 96,
+      "duration_hours": 1.45,
+      "duration_formatted": "1h27m",
+      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 2\u00d725m @297W / 5m rec | 10m @156W"
+    },
+    {
+      "id": 99297379,
+      "date": "2026-04-07",
+      "name": "Aerobic Support Ride",
+      "type": "WORKOUT",
+      "planned_tss": 40,
+      "duration_hours": 1.17,
+      "duration_formatted": "1h10m",
+      "workout_summary": null,
+      "description_preview": "- 5m 50% 90-100rpm\n- 5m 57.5% 90-100rpm\n- 10m 52.5% 90-100rpm"
+    },
+    {
+      "id": 99297380,
+      "date": "2026-04-08",
+      "name": "Threshold 3x15",
+      "type": "WORKOUT",
+      "planned_tss": 106,
+      "duration_hours": 1.49,
+      "duration_formatted": "1h29m30s",
+      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d715m @320W / 7m30s rec | 5m @156W"
+    },
+    {
+      "id": 99297381,
+      "date": "2026-04-09",
+      "name": "Easy Circulation Spin",
+      "type": "WORKOUT",
+      "planned_tss": 33,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "description_preview": "- 15m 55% 90-100rpm\n- 30m 61% 90-100rpm\n- 15m 50% 90-100rpm"
+    },
+    {
+      "id": 99297382,
+      "date": "2026-04-10",
+      "name": "Aerobic Base + Late Load",
+      "type": "WORKOUT",
+      "planned_tss": 64,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "- 10m 55% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67.5% 90-100rpm"
+    },
+    {
+      "id": 99297383,
+      "date": "2026-04-11",
+      "name": "VO2 4x5",
+      "type": "WORKOUT",
+      "planned_tss": 80,
+      "duration_hours": 1.12,
+      "duration_formatted": "1h7m",
+      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 4\u00d75m @363W / 5m rec | 10m @156W"
+    },
+    {
       "id": 97871145,
       "date": "2026-04-12",
       "name": "Grand Prix Cycliste Ste-Martine 2026",
@@ -1112,15 +1325,100 @@
       "duration_formatted": "0s",
       "workout_summary": null,
       "description_preview": null
+    },
+    {
+      "id": 99297384,
+      "date": "2026-04-12",
+      "name": "Long Ride",
+      "type": "WORKOUT",
+      "planned_tss": 103,
+      "duration_hours": 3.0,
+      "duration_formatted": "3h",
+      "workout_summary": null,
+      "description_preview": "- 15m 55% 90-100rpm\n- 20m 60% 90-100rpm\n- 2m 72.5%"
+    },
+    {
+      "id": 99297385,
+      "date": "2026-04-13",
+      "name": "Sweet Spot 2x30",
+      "type": "WORKOUT",
+      "planned_tss": 102,
+      "duration_hours": 1.48,
+      "duration_formatted": "1h29m",
+      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 2\u00d730m @293W / 6m rec"
+    },
+    {
+      "id": 99297386,
+      "date": "2026-04-14",
+      "name": "Aerobic Support Ride",
+      "type": "WORKOUT",
+      "planned_tss": 40,
+      "duration_hours": 1.17,
+      "duration_formatted": "1h10m",
+      "workout_summary": null,
+      "description_preview": "- 5m 50% 90-100rpm\n- 5m 57.5% 90-100rpm\n- 10m 52.5% 90-100rpm"
+    },
+    {
+      "id": 99297387,
+      "date": "2026-04-15",
+      "name": "Threshold 2x20",
+      "type": "WORKOUT",
+      "planned_tss": 97,
+      "duration_hours": 1.45,
+      "duration_formatted": "1h27m",
+      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 2\u00d720m @316W / 10m rec | 10m @156W"
+    },
+    {
+      "id": 99297388,
+      "date": "2026-04-16",
+      "name": "Easy Circulation Spin",
+      "type": "WORKOUT",
+      "planned_tss": 33,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "description_preview": "- 15m 55% 90-100rpm\n- 30m 61% 90-100rpm\n- 15m 50% 90-100rpm"
+    },
+    {
+      "id": 99297389,
+      "date": "2026-04-17",
+      "name": "Aerobic Base + Late Load",
+      "type": "WORKOUT",
+      "planned_tss": 64,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "- 10m 55% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67.5% 90-100rpm"
+    },
+    {
+      "id": 99297390,
+      "date": "2026-04-18",
+      "name": "VO2 3x8",
+      "type": "WORKOUT",
+      "planned_tss": 87,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
+      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d78m @353W / 8m rec | 10m @156W"
+    },
+    {
+      "id": 99297391,
+      "date": "2026-04-19",
+      "name": "Long Ride",
+      "type": "WORKOUT",
+      "planned_tss": 103,
+      "duration_hours": 3.0,
+      "duration_formatted": "3h",
+      "workout_summary": null,
+      "description_preview": "- 15m 55% 90-100rpm\n- 20m 60% 90-100rpm\n- 2m 72.5%"
     }
   ],
   "workout_summary_stats": {
-    "attempted": 5,
-    "success": 2,
-    "patternA": 2,
+    "attempted": 33,
+    "success": 14,
+    "patternA": 14,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 3
+    "bail_no_match": 19
   },
   "weekly_summary": {
     "total_training_hours": 14.11,
