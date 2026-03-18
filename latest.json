@@ -15,21 +15,12 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-17T23:30:24.286770",
+    "last_updated": "2026-03-18T00:00:00.876143",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
   },
   "alerts": [
-    {
-      "metric": "monotony",
-      "value": 2.42,
-      "severity": "warning",
-      "threshold": 2.3,
-      "context": "Monotony 2.42 approaching overuse threshold. Alarm at 2.5. (total monotony 3.74 inflated by multi-sport training; cycling monotony 2.42 used for alerting)",
-      "persistence_days": null,
-      "tier": 2
-    },
     {
       "metric": "tid_distribution",
       "value": "Polarized",
@@ -63,7 +54,7 @@
       },
       "acwr": {
         "status": "green",
-        "value": 1.01
+        "value": 0.86
       },
       "feel": {
         "status": "unavailable",
@@ -198,20 +189,20 @@
     "rhr_baseline_28d": 45.7,
     "latest_hrv": 107.0,
     "latest_rhr": 53,
-    "acwr": 1.01,
+    "acwr": 0.86,
     "acwr_interpretation": "optimal",
-    "monotony": 3.74,
-    "monotony_interpretation": "elevated (primary sport 2.42, total 3.74 inflated by multi-sport)",
+    "monotony": 1.9,
+    "monotony_interpretation": "normal (primary sport 1.6, total 1.9 inflated by multi-sport)",
     "primary_sport": "cycling",
-    "primary_sport_monotony": 2.42,
-    "primary_sport_tss_7d": 497.0,
-    "effective_monotony": 2.42,
+    "primary_sport_monotony": 1.6,
+    "primary_sport_tss_7d": 390.0,
+    "effective_monotony": 1.6,
     "multi_sport_detected": true,
-    "strain": 2173.0,
-    "stress_tolerance": 5.8,
-    "load_recovery_ratio": 5.6,
-    "tss_7d_total": 581.0,
-    "tss_28d_total": 2297.0,
+    "strain": 901.0,
+    "stress_tolerance": 4.7,
+    "load_recovery_ratio": 4.6,
+    "tss_7d_total": 474.0,
+    "tss_28d_total": 2201.0,
     "zone_distribution_7d": {
       "z1_hours": 7.18,
       "z2_hours": 4.33,
@@ -308,11 +299,10 @@
     },
     "consistency_index": 1.0,
     "consistency_details": {
-      "planned_days": 7,
+      "planned_days": 6,
       "completed_days": 7,
-      "matched_days": 7,
+      "matched_days": 6,
       "planned_dates": [
-        "2026-03-11",
         "2026-03-12",
         "2026-03-13",
         "2026-03-14",
@@ -344,11 +334,11 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.12,
+          "planned_tss_delta": 1.22,
           "hard_sessions_planned": 2,
           "race_proximity": 26,
           "next_week_load": null,
-          "plan_coverage_current_week": 1.2,
+          "plan_coverage_current_week": 1.0,
           "plan_coverage_next_week": 0.0
         },
         "data_quality": "good",
@@ -384,13 +374,13 @@
     "p_max": 1363,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-17T23:30:24.286030",
+    "calculation_timestamp": "2026-03-18T00:00:00.875414",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 11,
       "activities_28d": 42,
-      "planned_workouts_7d": 7,
+      "planned_workouts_7d": 6,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
