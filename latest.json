@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-19T22:14:55.251086",
+    "last_updated": "2026-03-19T22:48:22.170985",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -362,7 +362,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.11,
+          "planned_tss_delta": 1.13,
           "hard_sessions_planned": 1,
           "race_proximity": 24,
           "next_week_load": 1.11,
@@ -402,7 +402,7 @@
     "p_max": 1363,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-19T22:14:55.250331",
+    "calculation_timestamp": "2026-03-19T22:48:22.170214",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1033,15 +1033,15 @@
       "description": "- 15m 52.5% 90-100rpm\n- 30m 60% 90-100rpm\n- 15m 50% 90-100rpm"
     },
     {
-      "id": 97903562,
+      "id": 99548966,
       "date": "2026-03-20",
       "name": "Aerobic Base + Late Load",
       "type": "WORKOUT",
-      "planned_tss": 64,
+      "planned_tss": 70,
       "duration_hours": 1.5,
       "duration_formatted": "1h30m",
       "workout_summary": null,
-      "description": "- 10m 55% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67.5% 90-100rpm\n- 20m 70% 90-100rpm\n- 10m 60% 90-100rpm"
+      "description": "- 10m 60% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 70% 90-100rpm\n- 20m 75% 90-100rpm\n- 10m 60% 90-100rpm"
     },
     {
       "id": 93662805,
