@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-20T21:18:54.910913",
+    "last_updated": "2026-03-20T21:49:54.045974",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -358,7 +358,7 @@
           "planned_tss_delta": 1.34,
           "hard_sessions_planned": 1,
           "race_proximity": 23,
-          "next_week_load": 1.11,
+          "next_week_load": 1.15,
           "plan_coverage_current_week": 0.6,
           "plan_coverage_next_week": 1.4
         },
@@ -395,7 +395,7 @@
     "p_max": 1362,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-20T21:18:54.910219",
+    "calculation_timestamp": "2026-03-20T21:49:54.045210",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1059,15 +1059,15 @@
       "description": "- 5m 55% 90rpm\n- 4m 65% 90rpm\n- 3m 75% 90rpm\n- 2m 85% 90rpm\n- 1m 95% 95rpm\n- 2m 55% 90rpm\n\n3x\n- 15m 92% 90-100rpm\n- 3m 50% 85rpm\n\n- 10m ramp 50-45%"
     },
     {
-      "id": 99297362,
+      "id": 99705095,
       "date": "2026-03-24",
       "name": "Aerobic Support Ride",
       "type": "WORKOUT",
-      "planned_tss": 40,
+      "planned_tss": 44,
       "duration_hours": 1.17,
       "duration_formatted": "1h10m",
       "workout_summary": null,
-      "description": "- 5m 50% 90-100rpm\n- 5m 57.5% 90-100rpm\n- 10m 52.5% 90-100rpm\n- 5m 60% 90-100rpm\n- 10m 55% 90-100rpm\n- 5m 65% 90-100rpm\n- 10m 62.5% 90-100rpm\n- 5m 70% 90-100rpm\n- 5m 67.5% 90-100rpm\n- 10m 47.5% 90-100rpm"
+      "description": "- 5m 55% 90-100rpm\n- 10m 58% 90-100rpm\n- 2m30 55% 90-100rpm\n- 12m30 60% 90-100rpm\n- 5m 55% 90-100rpm\n- 5m 62% 90-100rpm\n- 10m 65% 90-100rpm\n- 5m 70% 90-100rpm\n- 10m 68% 90-100rpm\n- 5m 47.5% 90-100rpm"
     },
     {
       "id": 99297364,
@@ -1092,15 +1092,15 @@
       "description": "- 15m 55% 90-100rpm\n- 30m 61% 90-100rpm\n- 15m 50% 90-100rpm"
     },
     {
-      "id": 99297366,
+      "id": 99705098,
       "date": "2026-03-27",
       "name": "Aerobic Base + Late Load",
       "type": "WORKOUT",
-      "planned_tss": 64,
+      "planned_tss": 65,
       "duration_hours": 1.5,
       "duration_formatted": "1h30m",
       "workout_summary": null,
-      "description": "- 10m 55% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67.5% 90-100rpm\n- 20m 70% 90-100rpm\n- 10m 60% 90-100rpm"
+      "description": "- 10m 60% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67% 90-100rpm\n- 20m 70% 90-100rpm\n- 10m 58% 90-100rpm"
     },
     {
       "id": 99297368,
@@ -1113,15 +1113,15 @@
       "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 6\u00d73m @379W / 3m rec | 10m @156W"
     },
     {
-      "id": 99297369,
+      "id": 99705100,
       "date": "2026-03-29",
       "name": "Long Ride",
       "type": "WORKOUT",
-      "planned_tss": 103,
+      "planned_tss": 114,
       "duration_hours": 3.0,
       "duration_formatted": "3h",
       "workout_summary": null,
-      "description_preview": "- 15m 55% 90-100rpm\n- 20m 60% 90-100rpm\n- 2m 72.5%"
+      "description_preview": "- 10m 55% 90-100rpm\n- 25m 60% 90-100rpm\n- 2m 72%"
     },
     {
       "id": 99297370,
@@ -1134,15 +1134,15 @@
       "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d720m @300W / 4m rec"
     },
     {
-      "id": 99297371,
+      "id": 99705102,
       "date": "2026-03-31",
       "name": "Aerobic Support Ride",
       "type": "WORKOUT",
-      "planned_tss": 40,
+      "planned_tss": 44,
       "duration_hours": 1.17,
       "duration_formatted": "1h10m",
       "workout_summary": null,
-      "description_preview": "- 5m 50% 90-100rpm\n- 5m 57.5% 90-100rpm\n- 10m 52.5% 90-100rpm"
+      "description_preview": "- 5m 55% 90-100rpm\n- 10m 58% 90-100rpm\n- 2m30 55% 90-100rpm"
     },
     {
       "id": 99297373,
@@ -1166,15 +1166,15 @@
       "description_preview": "- 15m 55% 90-100rpm\n- 30m 61% 90-100rpm\n- 15m 50% 90-100rpm"
     },
     {
-      "id": 99297375,
+      "id": 99705105,
       "date": "2026-04-03",
       "name": "Aerobic Base + Late Load",
       "type": "WORKOUT",
-      "planned_tss": 64,
+      "planned_tss": 65,
       "duration_hours": 1.5,
       "duration_formatted": "1h30m",
       "workout_summary": null,
-      "description_preview": "- 10m 55% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67.5% 90-100rpm"
+      "description_preview": "- 10m 60% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67% 90-100rpm"
     },
     {
       "id": 99297376,
@@ -1187,15 +1187,15 @@
       "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 5\u00d74m @369W / 4m rec | 10m @156W"
     },
     {
-      "id": 99297377,
+      "id": 99705107,
       "date": "2026-04-05",
       "name": "Long Ride",
       "type": "WORKOUT",
-      "planned_tss": 103,
+      "planned_tss": 114,
       "duration_hours": 3.0,
       "duration_formatted": "3h",
       "workout_summary": null,
-      "description_preview": "- 15m 55% 90-100rpm\n- 20m 60% 90-100rpm\n- 2m 72.5%"
+      "description_preview": "- 10m 55% 90-100rpm\n- 25m 60% 90-100rpm\n- 2m 72%"
     },
     {
       "id": 99297378,
@@ -1208,15 +1208,15 @@
       "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 2\u00d725m @297W / 5m rec | 10m @156W"
     },
     {
-      "id": 99297379,
+      "id": 99705109,
       "date": "2026-04-07",
       "name": "Aerobic Support Ride",
       "type": "WORKOUT",
-      "planned_tss": 40,
+      "planned_tss": 44,
       "duration_hours": 1.17,
       "duration_formatted": "1h10m",
       "workout_summary": null,
-      "description_preview": "- 5m 50% 90-100rpm\n- 5m 57.5% 90-100rpm\n- 10m 52.5% 90-100rpm"
+      "description_preview": "- 5m 55% 90-100rpm\n- 10m 58% 90-100rpm\n- 2m30 55% 90-100rpm"
     },
     {
       "id": 99297380,
@@ -1224,8 +1224,8 @@
       "name": "Threshold 3x15",
       "type": "WORKOUT",
       "planned_tss": 106,
-      "duration_hours": 1.49,
-      "duration_formatted": "1h29m30s",
+      "duration_hours": 1.48,
+      "duration_formatted": "1h29m",
       "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d715m @320W / 7m30s rec | 5m @156W"
     },
     {
@@ -1240,15 +1240,15 @@
       "description_preview": "- 15m 55% 90-100rpm\n- 30m 61% 90-100rpm\n- 15m 50% 90-100rpm"
     },
     {
-      "id": 99297382,
+      "id": 99705112,
       "date": "2026-04-10",
       "name": "Aerobic Base + Late Load",
       "type": "WORKOUT",
-      "planned_tss": 64,
+      "planned_tss": 65,
       "duration_hours": 1.5,
       "duration_formatted": "1h30m",
       "workout_summary": null,
-      "description_preview": "- 10m 55% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67.5% 90-100rpm"
+      "description_preview": "- 10m 60% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67% 90-100rpm"
     },
     {
       "id": 99297383,
@@ -1272,15 +1272,15 @@
       "description_preview": null
     },
     {
-      "id": 99297384,
+      "id": 99705114,
       "date": "2026-04-12",
       "name": "Long Ride",
       "type": "WORKOUT",
-      "planned_tss": 103,
+      "planned_tss": 114,
       "duration_hours": 3.0,
       "duration_formatted": "3h",
       "workout_summary": null,
-      "description_preview": "- 15m 55% 90-100rpm\n- 20m 60% 90-100rpm\n- 2m 72.5%"
+      "description_preview": "- 10m 55% 90-100rpm\n- 25m 60% 90-100rpm\n- 2m 72%"
     },
     {
       "id": 99297385,
@@ -1293,15 +1293,15 @@
       "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 2\u00d730m @293W / 6m rec"
     },
     {
-      "id": 99297386,
+      "id": 99705116,
       "date": "2026-04-14",
       "name": "Aerobic Support Ride",
       "type": "WORKOUT",
-      "planned_tss": 40,
+      "planned_tss": 44,
       "duration_hours": 1.17,
       "duration_formatted": "1h10m",
       "workout_summary": null,
-      "description_preview": "- 5m 50% 90-100rpm\n- 5m 57.5% 90-100rpm\n- 10m 52.5% 90-100rpm"
+      "description_preview": "- 5m 55% 90-100rpm\n- 10m 58% 90-100rpm\n- 2m30 55% 90-100rpm"
     },
     {
       "id": 99297387,
@@ -1325,15 +1325,15 @@
       "description_preview": "- 15m 55% 90-100rpm\n- 30m 61% 90-100rpm\n- 15m 50% 90-100rpm"
     },
     {
-      "id": 99297389,
+      "id": 99705119,
       "date": "2026-04-17",
       "name": "Aerobic Base + Late Load",
       "type": "WORKOUT",
-      "planned_tss": 64,
+      "planned_tss": 65,
       "duration_hours": 1.5,
       "duration_formatted": "1h30m",
       "workout_summary": null,
-      "description_preview": "- 10m 55% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67.5% 90-100rpm"
+      "description_preview": "- 10m 60% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67% 90-100rpm"
     },
     {
       "id": 99297390,
@@ -1346,15 +1346,15 @@
       "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d78m @353W / 8m rec | 10m @156W"
     },
     {
-      "id": 99297391,
+      "id": 99705121,
       "date": "2026-04-19",
       "name": "Long Ride",
       "type": "WORKOUT",
-      "planned_tss": 103,
+      "planned_tss": 114,
       "duration_hours": 3.0,
       "duration_formatted": "3h",
       "workout_summary": null,
-      "description_preview": "- 15m 55% 90-100rpm\n- 20m 60% 90-100rpm\n- 2m 72.5%"
+      "description_preview": "- 10m 55% 90-100rpm\n- 25m 60% 90-100rpm\n- 2m 72%"
     }
   ],
   "workout_summary_stats": {
