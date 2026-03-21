@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-21T13:52:06.557619",
+    "last_updated": "2026-03-21T14:15:05.941407",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -392,7 +392,7 @@
     "p_max": 1360,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-21T13:52:06.556879",
+    "calculation_timestamp": "2026-03-21T14:15:05.940660",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1160,8 +1160,8 @@
       "name": "Threshold 3x15",
       "type": "WORKOUT",
       "planned_tss": 106,
-      "duration_hours": 1.48,
-      "duration_formatted": "1h29m",
+      "duration_hours": 1.49,
+      "duration_formatted": "1h29m30s",
       "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d715m @320W / 7m30s rec | 5m @156W"
     },
     {
