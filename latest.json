@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-21T14:59:17.469658",
+    "last_updated": "2026-03-21T15:24:30.888842",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -355,7 +355,7 @@
           "planned_tss_delta": 1.47,
           "hard_sessions_planned": 1,
           "race_proximity": 22,
-          "next_week_load": 1.15,
+          "next_week_load": 1.13,
           "plan_coverage_current_week": 0.4,
           "plan_coverage_next_week": 1.4
         },
@@ -392,7 +392,7 @@
     "p_max": 1360,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-21T14:59:17.468880",
+    "calculation_timestamp": "2026-03-21T15:24:30.888060",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -983,15 +983,15 @@
       "description": "- 15m 55% 90-100rpm\n- 20m 60% 90-100rpm\n- 2m 72.5%\n- 3m 50% 90-100rpm\n- 20m 52.5% 90-100rpm\n- 15m 62.5% 90-100rpm\n- 2m 72.5%\n- 3m 50% 90-100rpm\n- 15m 65% 90-100rpm\n- 10m 55% 90-100rpm\n- 25m 60% 90-100rpm\n- 2m 72.5%\n- 3m 50% 90-100rpm\n- 25m 50% 90-100rpm\n- 2m 72.5%\n- 3m 50% 90-100rpm\n- 7m 69% 90-100rpm\n- 8m 50% 90-100rpm"
     },
     {
-      "id": 99297361,
+      "id": 99804906,
       "date": "2026-03-23",
       "name": "Sweet Spot 3x15",
       "type": "WORKOUT",
-      "planned_tss": 91,
-      "duration_hours": 1.35,
-      "duration_formatted": "1h21m",
-      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d715m @303W / 3m rec | 10m @156W",
-      "description": "- 5m 55% 90rpm\n- 4m 65% 90rpm\n- 3m 75% 90rpm\n- 2m 85% 90rpm\n- 1m 95% 95rpm\n- 2m 55% 90rpm\n\n3x\n- 15m 92% 90-100rpm\n- 3m 50% 85rpm\n\n- 10m ramp 50-45%"
+      "planned_tss": 87,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
+      "workout_summary": "5m @165W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d715m @303W / 3m rec | 4m @156W",
+      "description": "- 5m 50% 80-100rpm\n- 4m 65% 80-100rpm\n- 3m 75% 80-100rpm\n- 2m 85% 80-100rpm\n- 1m 95% 95-105rpm\n- 2m 55% 80-100rpm\n\n3x\n- 15m 92% 80-100rpm\n- 3m 50% 80-100rpm\n\n- 4m ramp 50-45% 80-100rpm"
     },
     {
       "id": 99705095,
@@ -1005,15 +1005,15 @@
       "description": "- 5m 55% 90-100rpm\n- 10m 58% 90-100rpm\n- 2m30 55% 90-100rpm\n- 12m30 60% 90-100rpm\n- 5m 55% 90-100rpm\n- 5m 62% 90-100rpm\n- 10m 65% 90-100rpm\n- 5m 70% 90-100rpm\n- 10m 68% 90-100rpm\n- 5m 47.5% 90-100rpm"
     },
     {
-      "id": 99297364,
+      "id": 99804908,
       "date": "2026-03-25",
       "name": "Threshold 4x8",
       "type": "WORKOUT",
-      "planned_tss": 88,
-      "duration_hours": 1.25,
-      "duration_formatted": "1h15m",
-      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 4\u00d78m @330W / 4m rec | 10m @156W",
-      "description": "- 5m 55% 90rpm\n- 4m 65% 90rpm\n- 3m 75% 90rpm\n- 2m 85% 90rpm\n- 1m 95% 95rpm\n- 2m 55% 90rpm\n\n4x\n- 8m 100% 90-100rpm\n- 4m 50% 85rpm\n\n- 10m ramp 50-45%"
+      "planned_tss": 85,
+      "duration_hours": 1.17,
+      "duration_formatted": "1h10m",
+      "workout_summary": "5m @165W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 4\u00d78m @330W / 4m rec | 5m @156W",
+      "description": "- 5m 50% 80-100rpm\n- 4m 65% 80-100rpm\n- 3m 75% 80-100rpm\n- 2m 85% 80-100rpm\n- 1m 95% 95-105rpm\n- 2m 55% 80-100rpm\n\n4x\n- 8m 100% 80-100rpm\n- 4m 50% 80-100rpm\n\n- 5m ramp 50-45% 80-100rpm"
     },
     {
       "id": 99297365,
@@ -1060,14 +1060,14 @@
       "description_preview": "- 10m 55% 90-100rpm\n- 25m 60% 90-100rpm\n- 2m 72%"
     },
     {
-      "id": 99297370,
+      "id": 99804913,
       "date": "2026-03-30",
-      "name": "Sweet Spot 3x20",
+      "name": "Sweet Spot 2x25",
       "type": "WORKOUT",
-      "planned_tss": 106,
-      "duration_hours": 1.48,
-      "duration_formatted": "1h29m",
-      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d720m @300W / 4m rec"
+      "planned_tss": 93,
+      "duration_hours": 1.33,
+      "duration_formatted": "1h20m",
+      "workout_summary": "5m @165W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 2\u00d725m @300W / 5m rec | 3m @165W"
     },
     {
       "id": 99705102,
@@ -1081,14 +1081,14 @@
       "description_preview": "- 5m 55% 90-100rpm\n- 10m 58% 90-100rpm\n- 2m30 55% 90-100rpm"
     },
     {
-      "id": 99297373,
+      "id": 99804915,
       "date": "2026-04-01",
-      "name": "Threshold 3x12",
+      "name": "Threshold 4x10",
       "type": "WORKOUT",
-      "planned_tss": 90,
-      "duration_hours": 1.27,
-      "duration_formatted": "1h16m",
-      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d712m @323W / 6m rec | 5m @156W"
+      "planned_tss": 97,
+      "duration_hours": 1.33,
+      "duration_formatted": "1h20m",
+      "workout_summary": "5m @165W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 4\u00d710m @326W / 5m rec | 3m @165W"
     },
     {
       "id": 99297374,
@@ -1134,14 +1134,14 @@
       "description_preview": "- 10m 55% 90-100rpm\n- 25m 60% 90-100rpm\n- 2m 72%"
     },
     {
-      "id": 99297378,
+      "id": 99804920,
       "date": "2026-04-06",
-      "name": "Sweet Spot 2x25",
+      "name": "Sweet Spot 4x15",
       "type": "WORKOUT",
-      "planned_tss": 96,
-      "duration_hours": 1.45,
-      "duration_formatted": "1h27m",
-      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 2\u00d725m @297W / 5m rec | 10m @156W"
+      "planned_tss": 109,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": "5m @165W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 4\u00d715m @303W / 3m rec | 1m @165W"
     },
     {
       "id": 99705109,
@@ -1155,14 +1155,14 @@
       "description_preview": "- 5m 55% 90-100rpm\n- 10m 58% 90-100rpm\n- 2m30 55% 90-100rpm"
     },
     {
-      "id": 99297380,
+      "id": 99804922,
       "date": "2026-04-08",
-      "name": "Threshold 3x15",
+      "name": "Threshold 3x16",
       "type": "WORKOUT",
-      "planned_tss": 106,
-      "duration_hours": 1.49,
-      "duration_formatted": "1h29m30s",
-      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d715m @320W / 7m30s rec | 5m @156W"
+      "planned_tss": 105,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": "5m @165W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d716m @313W / 8m rec | 1m @165W"
     },
     {
       "id": 99297381,
@@ -1219,14 +1219,14 @@
       "description_preview": "- 10m 55% 90-100rpm\n- 25m 60% 90-100rpm\n- 2m 72%"
     },
     {
-      "id": 99297385,
+      "id": 99804927,
       "date": "2026-04-13",
-      "name": "Sweet Spot 2x30",
+      "name": "Sweet Spot 2x35",
       "type": "WORKOUT",
-      "planned_tss": 102,
-      "duration_hours": 1.48,
-      "duration_formatted": "1h29m",
-      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 2\u00d730m @293W / 6m rec"
+      "planned_tss": 119,
+      "duration_hours": 1.68,
+      "duration_formatted": "1h41m",
+      "workout_summary": "5m @165W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 2\u00d735m @297W / 7m rec"
     },
     {
       "id": 99705116,
@@ -1240,14 +1240,14 @@
       "description_preview": "- 5m 55% 90-100rpm\n- 10m 58% 90-100rpm\n- 2m30 55% 90-100rpm"
     },
     {
-      "id": 99297387,
+      "id": 99804929,
       "date": "2026-04-15",
-      "name": "Threshold 2x20",
+      "name": "Threshold 4x12",
       "type": "WORKOUT",
-      "planned_tss": 97,
-      "duration_hours": 1.45,
-      "duration_formatted": "1h27m",
-      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 2\u00d720m @316W / 10m rec | 10m @156W"
+      "planned_tss": 111,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": "5m @165W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 4\u00d712m @323W / 6m rec | 1m @165W"
     },
     {
       "id": 99297388,
