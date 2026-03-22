@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-22T20:59:36.106252",
+    "last_updated": "2026-03-22T21:26:30.068395",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -369,7 +369,7 @@
     "p_max": 1360,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-22T20:59:36.105510",
+    "calculation_timestamp": "2026-03-22T21:26:30.067165",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1130,14 +1130,14 @@
       "description_preview": "- 10m 60% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67% 90-100rpm"
     },
     {
-      "id": 99297376,
+      "id": 99297383,
       "date": "2026-04-04",
-      "name": "VO2 5x4",
+      "name": "VO2 4x5",
       "type": "WORKOUT",
-      "planned_tss": 82,
+      "planned_tss": 80,
       "duration_hours": 1.12,
       "duration_formatted": "1h7m",
-      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 5\u00d74m @369W / 4m rec | 10m @156W"
+      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 4\u00d75m @363W / 5m rec | 10m @156W"
     },
     {
       "id": 99705107,
@@ -1204,14 +1204,14 @@
       "description_preview": "- 10m 60% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67% 90-100rpm"
     },
     {
-      "id": 99297383,
+      "id": 99297376,
       "date": "2026-04-11",
-      "name": "VO2 4x5",
+      "name": "VO2 5x4",
       "type": "WORKOUT",
-      "planned_tss": 80,
+      "planned_tss": 82,
       "duration_hours": 1.12,
       "duration_formatted": "1h7m",
-      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 4\u00d75m @363W / 5m rec | 10m @156W"
+      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 5\u00d74m @369W / 4m rec | 10m @156W"
     },
     {
       "id": 97871145,
