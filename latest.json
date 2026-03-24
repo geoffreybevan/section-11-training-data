@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-24T21:58:30.953047",
+    "last_updated": "2026-03-24T22:26:23.413803",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -329,7 +329,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.1,
+          "planned_tss_delta": 1.09,
           "hard_sessions_planned": 2,
           "race_proximity": 89,
           "next_week_load": 1.18,
@@ -369,7 +369,7 @@
     "p_max": 1360,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-24T21:58:30.952319",
+    "calculation_timestamp": "2026-03-24T22:26:23.413075",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -993,11 +993,11 @@
       "date": "2026-03-24",
       "name": "Aerobic Support Ride",
       "type": "WORKOUT",
-      "planned_tss": 44,
+      "planned_tss": 40,
       "duration_hours": 1.17,
       "duration_formatted": "1h10m",
       "workout_summary": null,
-      "description": "- 5m 55% 90-100rpm\n- 10m 58% 90-100rpm\n- 2m30 55% 90-100rpm\n- 12m30 60% 90-100rpm\n- 5m 55% 90-100rpm\n- 5m 62% 90-100rpm\n- 10m 65% 90-100rpm\n- 5m 70% 90-100rpm\n- 10m 68% 90-100rpm\n- 5m 47.5% 90-100rpm"
+      "description": "- 5m 50% 90-100rpm\n- 5m 57.5% 90-100rpm\n- 10m 52.5% 90-100rpm\n- 5m 60% 90-100rpm\n- 10m 55% 90-100rpm\n- 5m 65% 90-100rpm\n- 10m 62.5% 90-100rpm\n- 5m 70% 90-100rpm\n- 5m 67.5% 90-100rpm\n- 10m 47.5% 90-100rpm"
     },
     {
       "id": 99804908,
