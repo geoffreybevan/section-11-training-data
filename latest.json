@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-26T12:38:14.785527",
+    "last_updated": "2026-03-26T14:08:35.429758",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -89,7 +89,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-03-11",
-    "age_days": 14,
+    "age_days": 15,
     "total_months": 13,
     "history_confidence": "high"
   },
@@ -317,10 +317,10 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.69,
+          "planned_tss_delta": 0.68,
           "hard_sessions_planned": 1,
           "race_proximity": 87,
-          "next_week_load": 1.18,
+          "next_week_load": 1.17,
           "plan_coverage_current_week": 0.6,
           "plan_coverage_next_week": 1.4
         },
@@ -357,7 +357,7 @@
     "p_max": 1357,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-26T12:38:14.784769",
+    "calculation_timestamp": "2026-03-26T14:08:35.429032",
     "data_quality": {
       "hrv_data_points": 6,
       "rhr_data_points": 6,
@@ -375,7 +375,7 @@
       "id": "i134906206",
       "date": "2026-03-26T06:20:21",
       "type": "VirtualRide",
-      "name": "Ride Cave: Volta ao Algarve 2026 Stage 4 (29/182)",
+      "name": "Easy Circulation Spin",
       "duration_hours": 1.0,
       "distance_km": 28.97,
       "tss": 32,
@@ -397,7 +397,7 @@
       "carbs_used": 135,
       "carbs_ingested": null,
       "variability_index": 1.0054348,
-      "decoupling": 3.7577696,
+      "decoupling": 0.1379766,
       "efficiency_factor": 1.6517857,
       "hrrc": null,
       "elevation_m": 360.4,
@@ -933,15 +933,15 @@
   ],
   "planned_workouts": [
     {
-      "id": 99297365,
+      "id": 100779529,
       "date": "2026-03-26",
       "name": "Easy Circulation Spin",
       "type": "WORKOUT",
-      "planned_tss": 33,
+      "planned_tss": 31,
       "duration_hours": 1.0,
       "duration_formatted": "1h",
       "workout_summary": null,
-      "description": "- 15m 55% 90-100rpm\n- 30m 61% 90-100rpm\n- 15m 50% 90-100rpm"
+      "description": "- 15m 53% 90-100rpm\n- 30m 60% 90-100rpm\n- 15m 50% 90-100rpm"
     },
     {
       "id": 99297368,
@@ -977,15 +977,15 @@
       "description": "- 5m 50% 80-100rpm\n- 4m 65% 80-100rpm\n- 3m 75% 80-100rpm\n- 2m 85% 80-100rpm\n- 1m 95% 95-105rpm\n- 2m 55% 80-100rpm\n\n2x\n- 25m 91% 80-100rpm\n- 5m 50% 80-100rpm\n\n- 3m 50% 80-100rpm"
     },
     {
-      "id": 99297374,
+      "id": 100779644,
       "date": "2026-03-31",
       "name": "Easy Circulation Spin",
       "type": "WORKOUT",
-      "planned_tss": 33,
+      "planned_tss": 31,
       "duration_hours": 1.0,
       "duration_formatted": "1h",
       "workout_summary": null,
-      "description": "- 15m 55% 90-100rpm\n- 30m 61% 90-100rpm\n- 15m 50% 90-100rpm"
+      "description": "- 15m 53% 90-100rpm\n- 30m 60% 90-100rpm\n- 15m 50% 90-100rpm"
     },
     {
       "id": 99804915,
@@ -1052,15 +1052,15 @@
       "workout_summary": "5m @165W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 4\u00d715m @303W / 3m rec | 1m @165W"
     },
     {
-      "id": 99297381,
+      "id": 100779651,
       "date": "2026-04-07",
       "name": "Easy Circulation Spin",
       "type": "WORKOUT",
-      "planned_tss": 33,
+      "planned_tss": 31,
       "duration_hours": 1.0,
       "duration_formatted": "1h",
       "workout_summary": null,
-      "description_preview": "- 15m 55% 90-100rpm\n- 30m 61% 90-100rpm\n- 15m 50% 90-100rpm"
+      "description_preview": "- 15m 53% 90-100rpm\n- 30m 60% 90-100rpm\n- 15m 50% 90-100rpm"
     },
     {
       "id": 99804922,
@@ -1115,15 +1115,15 @@
       "workout_summary": "5m @165W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 2\u00d735m @297W / 7m rec"
     },
     {
-      "id": 99297388,
+      "id": 100779657,
       "date": "2026-04-14",
       "name": "Easy Circulation Spin",
       "type": "WORKOUT",
-      "planned_tss": 33,
+      "planned_tss": 31,
       "duration_hours": 1.0,
       "duration_formatted": "1h",
       "workout_summary": null,
-      "description_preview": "- 15m 55% 90-100rpm\n- 30m 61% 90-100rpm\n- 15m 50% 90-100rpm"
+      "description_preview": "- 15m 53% 90-100rpm\n- 30m 60% 90-100rpm\n- 15m 50% 90-100rpm"
     },
     {
       "id": 99804929,
