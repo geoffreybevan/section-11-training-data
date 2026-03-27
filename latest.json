@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-27T11:54:39.608160",
+    "last_updated": "2026-03-27T12:33:57.236596",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -371,7 +371,7 @@
     "p_max": 1357,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-27T11:54:39.607414",
+    "calculation_timestamp": "2026-03-27T12:33:57.235855",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -433,7 +433,7 @@
       "id": "i134906206",
       "date": "2026-03-26T06:20:21",
       "type": "VirtualRide",
-      "name": "Easy Circulation Spin",
+      "name": "Ride Cave: Volta ao Algarve 2026 Stage 4 (29/182)",
       "duration_hours": 1.0,
       "distance_km": 28.97,
       "tss": 32,
