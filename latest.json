@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-28T20:21:19.355959",
+    "last_updated": "2026-03-28T20:52:18.949373",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -350,11 +350,11 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 0.66,
+          "planned_tss_delta": 1.32,
           "hard_sessions_planned": 0,
           "race_proximity": 85,
           "next_week_load": 1.17,
-          "plan_coverage_current_week": 0.2,
+          "plan_coverage_current_week": 0.4,
           "plan_coverage_next_week": 1.4
         },
         "data_quality": "good",
@@ -390,7 +390,7 @@
     "p_max": 1357,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-28T20:21:19.355238",
+    "calculation_timestamp": "2026-03-28T20:52:18.948657",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1021,6 +1021,17 @@
       "description": "- 10m 60% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67% 90-100rpm\n- 20m 70% 90-100rpm\n- 30m 62% 90-100rpm\n- 10m 58% 90-100rpm"
     },
     {
+      "id": 101149328,
+      "date": "2026-03-29",
+      "name": "Oops! All zone 2!",
+      "type": "WORKOUT",
+      "planned_tss": 84,
+      "duration_hours": 2.0,
+      "duration_formatted": "2h",
+      "workout_summary": null,
+      "description": "- 10m 60% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67% 90-100rpm\n- 20m 70% 90-100rpm\n- 30m 62% 90-100rpm\n- 10m 58% 90-100rpm"
+    },
+    {
       "id": 99804913,
       "date": "2026-03-30",
       "name": "Sweet Spot 2x25",
@@ -1236,12 +1247,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 21,
+    "attempted": 22,
     "success": 9,
     "patternA": 9,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 12
+    "bail_no_match": 13
   },
   "weekly_summary": {
     "total_training_hours": 14.34,
