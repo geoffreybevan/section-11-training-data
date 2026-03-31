@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-03-31T12:38:04.769868",
+    "last_updated": "2026-03-31T14:11:43.685272",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -36,16 +36,16 @@
     "priority": 3,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 100.2,
-        "delta_pct": null
+        "status": "green",
+        "value": 110.0,
+        "baseline_7d": 101.6,
+        "delta_pct": 8.3
       },
       "rhr": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 46.7,
-        "delta_bpm": null
+        "status": "amber",
+        "value": 49,
+        "baseline_7d": 45.4,
+        "delta_bpm": 3.6
       },
       "sleep": {
         "status": "green",
@@ -61,19 +61,19 @@
         "value": null
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
+        "status": "green",
+        "value": 1.0
       },
       "tsb": {
         "status": "green",
-        "value": -6.0
+        "value": -7.2
       }
     },
     "signal_summary": {
-      "green": 3,
-      "amber": 0,
+      "green": 5,
+      "amber": 1,
       "red": 0,
-      "unavailable": 4
+      "unavailable": 1
     },
     "phase_context": {
       "phase": "Build",
@@ -83,13 +83,13 @@
     },
     "race_week_defers": false,
     "modification": null,
-    "reason": "P3 green light. 3 green, 0 amber (threshold 3), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "reason": "P3 green light. 5 green, 1 amber (threshold 3), 0 red.",
     "alarm_refs": []
   },
   "history": {
     "available": true,
     "last_generated": "2026-03-11",
-    "age_days": 19,
+    "age_days": 20,
     "total_months": 13,
     "history_confidence": "high"
   },
@@ -127,10 +127,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 71.96,
-      "atl": 77.91,
-      "tsb": -5.95,
-      "ramp_rate": -0.27,
+      "ctl": 72.22,
+      "atl": 79.38,
+      "tsb": -7.16,
+      "ramp_rate": -0.01,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -168,21 +168,21 @@
     },
     "current_metrics": {
       "weight_kg": 80.1,
-      "resting_hr": 51,
-      "hrv": null,
+      "resting_hr": 49,
+      "hrv": 110.0,
       "sleep_quality": null,
       "sleep_hours": 7.7,
       "sleep_formatted": "7h42m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 100.2,
-    "rhr_baseline_7d": 46.7,
-    "hrv_baseline_28d": 98.6,
-    "rhr_baseline_28d": 46.2,
-    "latest_hrv": null,
-    "latest_rhr": null,
+    "recovery_index": 1.0,
+    "hrv_baseline_7d": 101.6,
+    "rhr_baseline_7d": 45.4,
+    "hrv_baseline_28d": 99.0,
+    "rhr_baseline_28d": 45.9,
+    "latest_hrv": 110.0,
+    "latest_rhr": 49,
     "acwr": 0.9,
     "acwr_interpretation": "optimal",
     "monotony": 2.49,
@@ -194,7 +194,7 @@
     "multi_sport_detected": true,
     "strain": 1275.0,
     "stress_tolerance": 5.1,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 5.1,
     "tss_7d_total": 512.0,
     "tss_28d_total": 2266.0,
     "zone_distribution_7d": {
@@ -328,7 +328,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.18,
+          "planned_tss_delta": 1.21,
           "hard_sessions_planned": 2,
           "race_proximity": 82,
           "next_week_load": 0.98,
@@ -368,10 +368,10 @@
     "p_max": 1353,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-03-31T12:38:04.769125",
+    "calculation_timestamp": "2026-03-31T14:11:43.684529",
     "data_quality": {
-      "hrv_data_points": 6,
-      "rhr_data_points": 6,
+      "hrv_data_points": 7,
+      "rhr_data_points": 7,
       "activities_7d": 11,
       "activities_28d": 43,
       "planned_workouts_7d": 7,
@@ -998,7 +998,7 @@
     {
       "date": "2026-03-30",
       "weight_kg": 79.6,
-      "resting_hr": 51,
+      "resting_hr": 40,
       "hrv_rmssd": 103.0,
       "hrv_sdnn": null,
       "sleep_hours": 7.25,
@@ -1014,8 +1014,8 @@
     {
       "date": "2026-03-31",
       "weight_kg": 80.1,
-      "resting_hr": null,
-      "hrv_rmssd": null,
+      "resting_hr": 49,
+      "hrv_rmssd": 110.0,
       "hrv_sdnn": null,
       "sleep_hours": 7.7,
       "sleep_formatted": "7h42m",
@@ -1024,7 +1024,7 @@
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
-      "avg_sleeping_hr": null,
+      "avg_sleeping_hr": 47.0,
       "vo2max": null
     }
   ],
@@ -1032,13 +1032,13 @@
     {
       "id": 100779644,
       "date": "2026-03-31",
-      "name": "Easy Circulation Spin",
+      "name": "FatMax?",
       "type": "WORKOUT",
-      "planned_tss": 31,
+      "planned_tss": 42,
       "duration_hours": 1.0,
       "duration_formatted": "1h",
       "workout_summary": null,
-      "description": "- 15m 53% 90-100rpm\n- 30m 60% 90-100rpm\n- 15m 50% 90-100rpm"
+      "description": "- 60m 65% 80-100rpm"
     },
     {
       "id": 99804915,
@@ -1247,8 +1247,8 @@
     "total_training_formatted": "12h10m",
     "total_tss": 512,
     "activities_count": 11,
-    "avg_hrv": 100.2,
-    "avg_resting_hr": 46.7
+    "avg_hrv": 101.6,
+    "avg_resting_hr": 45.4
   },
   "race_calendar": {
     "next_race": {
