@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-01T17:33:18.421277",
+    "last_updated": "2026-04-01T18:35:16.839302",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -84,7 +84,7 @@
       },
       "tsb": {
         "status": "green",
-        "value": -11.5
+        "value": -13.9
       }
     },
     "signal_summary": {
@@ -154,10 +154,10 @@
   },
   "current_status": {
     "fitness": {
-      "ctl": 73.37,
-      "atl": 84.9,
-      "tsb": -11.53,
-      "ramp_rate": 0.83,
+      "ctl": 73.89,
+      "atl": 87.83,
+      "tsb": -13.94,
+      "ramp_rate": 1.35,
       "fitness_source": "From Intervals.icu API (reflects completed workouts)"
     },
     "thresholds": {
@@ -356,11 +356,11 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.41,
+          "planned_tss_delta": 1.48,
           "hard_sessions_planned": 2,
           "race_proximity": 81,
           "next_week_load": 0.98,
-          "plan_coverage_current_week": 1.2,
+          "plan_coverage_current_week": 1.4,
           "plan_coverage_next_week": 1.2
         },
         "data_quality": "good",
@@ -396,13 +396,13 @@
     "p_max": 1355,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-01T17:33:18.420534",
+    "calculation_timestamp": "2026-04-01T18:35:16.838568",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
       "activities_7d": 13,
       "activities_28d": 45,
-      "planned_workouts_7d": 8,
+      "planned_workouts_7d": 9,
       "ftp_history_days": {
         "indoor": 0,
         "outdoor": 0
@@ -434,7 +434,7 @@
       "work_kj": 377.4,
       "calories": 377,
       "carbs_used": 103,
-      "carbs_ingested": null,
+      "carbs_ingested": 0,
       "variability_index": 1.0574163,
       "decoupling": -6.34065,
       "efficiency_factor": 1.6616541,
@@ -1182,6 +1182,17 @@
       "description": "- 5m 60% 80-100rpm\n- 3m 82% 80-100rpm\n- 2m 50% 80-100rpm\n- 3m 55% 80-100rpm\n- 2m 50% 80-100rpm\n- 3m 75% 80-100rpm\n- 2m 50% 80-100rpm\n- 3m 65% 80-100rpm\n- 2m 50% 80-100rpm\n- 3m  88% 80-100rpm\n- 2m 50% 80-100rpm"
     },
     {
+      "id": 102013118,
+      "date": "2026-04-01",
+      "name": "Power Meter Comparison Test",
+      "type": "WORKOUT",
+      "planned_tss": 22,
+      "duration_hours": 0.5,
+      "duration_formatted": "30m",
+      "workout_summary": null,
+      "description": "- 5m 60% 80-100rpm\n- 3m 82% 80-100rpm\n- 2m 50% 80-100rpm\n- 3m 55% 80-100rpm\n- 2m 50% 80-100rpm\n- 3m 75% 80-100rpm\n- 2m 50% 80-100rpm\n- 3m 65% 80-100rpm\n- 2m 50% 80-100rpm\n- 3m  88% 80-100rpm\n- 2m 50% 80-100rpm"
+    },
+    {
       "id": 99705102,
       "date": "2026-04-02",
       "name": "Aerobic Support Ride",
@@ -1366,12 +1377,12 @@
     }
   ],
   "workout_summary_stats": {
-    "attempted": 19,
+    "attempted": 20,
     "success": 8,
     "patternA": 8,
     "patternB": 0,
     "bail_no_workout_doc": 0,
-    "bail_no_match": 11
+    "bail_no_match": 12
   },
   "weekly_summary": {
     "total_training_hours": 13.84,
