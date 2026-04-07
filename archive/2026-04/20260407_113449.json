@@ -1,0 +1,1325 @@
+{
+  "READ_THIS_FIRST": {
+    "instruction_for_ai": "DO NOT calculate totals from individual activities. Use the pre-calculated values in 'summary', 'weekly_summary', and 'derived_metrics' sections below. These are already computed accurately from the API data.",
+    "display_formatting": "For durations and sleep, always display the '_formatted' fields (e.g., sleep_formatted, duration_formatted, total_training_formatted) instead of converting decimal '_hours' values. The formatted fields are pre-calculated from raw seconds and avoid rounding errors.",
+    "data_period": "Last 7 days (including today)",
+    "extended_data_note": "ACWR and baselines calculated from 28 days of data",
+    "capability_metrics_note": "The 'capability' block in derived_metrics contains durability trend (aggregate decoupling 7d/28d), efficiency factor trend (aggregate EF 7d/28d), HRRc trend (heart rate recovery 7d/28d), and TID comparison (7d vs 28d distribution drift). These measure HOW the athlete expresses fitness, not just load. Use these for coaching context alongside traditional load metrics. Durability and EF trend direction matters more than absolute values. HRRc is display only \u2014 higher = better parasympathetic recovery.",
+    "readiness_decision_note": "The 'readiness_decision' block contains a pre-computed go/modify/skip recommendation with priority level (P0=safety, P1=overload, P2=fatigue, P3=green), individual signal statuses, phase-adjusted thresholds, and structured modification guidance. Use this as the baseline for pre-workout recommendations. Override with explanation in the coach note if the AI's contextual judgment disagrees.",
+    "quick_stats": {
+      "total_training_hours": 13.68,
+      "total_training_formatted": "13h41m",
+      "total_activities": 13,
+      "total_tss": 632
+    }
+  },
+  "metadata": {
+    "athlete_id": "REDACTED",
+    "last_updated": "2026-04-07T10:38:21.204063",
+    "data_range_days": 7,
+    "extended_range_days": 28,
+    "version": "3.78"
+  },
+  "alerts": [
+    {
+      "metric": "rhr",
+      "value": 52,
+      "severity": "warning",
+      "threshold": "\u2191\u22655bpm vs baseline (47)",
+      "context": "RHR 52 is 5bpm above baseline. Monitor \u2014 alarm if persists >2 days.",
+      "persistence_days": 1,
+      "tier": 1
+    }
+  ],
+  "readiness_decision": {
+    "recommendation": "modify",
+    "priority": 2,
+    "signals": {
+      "hrv": {
+        "status": "green",
+        "value": 108.0,
+        "baseline_7d": 101.9,
+        "delta_pct": 6.0
+      },
+      "rhr": {
+        "status": "red",
+        "value": 52,
+        "baseline_7d": 47,
+        "delta_bpm": 5
+      },
+      "sleep": {
+        "status": "green",
+        "hours": 8.78,
+        "quality": null
+      },
+      "acwr": {
+        "status": "green",
+        "value": 1.08
+      },
+      "feel": {
+        "status": "unavailable",
+        "value": null
+      },
+      "ri": {
+        "status": "green",
+        "value": 0.96
+      },
+      "tsb": {
+        "status": "green",
+        "value": -7.0
+      }
+    },
+    "signal_summary": {
+      "green": 5,
+      "amber": 0,
+      "red": 1,
+      "unavailable": 1
+    },
+    "phase_context": {
+      "phase": "Build",
+      "phase_week": 0,
+      "amber_threshold": 3,
+      "modifier_applied": "build_loosened"
+    },
+    "race_week_defers": false,
+    "modification": {
+      "triggers": [
+        "rhr"
+      ],
+      "suggested_adjustments": {
+        "intensity": "reduce",
+        "volume": "preserve",
+        "cap_zone": null
+      }
+    },
+    "reason": "P2 signal count. 1 red (rhr), 0 amber ().",
+    "alarm_refs": []
+  },
+  "history": {
+    "available": true,
+    "last_generated": "2026-03-11",
+    "age_days": 26,
+    "total_months": 13,
+    "history_confidence": "high"
+  },
+  "summary": {
+    "period_description": "Last 7 days of training (including today)",
+    "note": "Duration calculated from API moving_time field.",
+    "total_duration_decimal_hours": 13.68,
+    "total_activities": 13,
+    "by_activity_type": {
+      "Ride": {
+        "duration_decimal_hours": 0.68,
+        "count": 1,
+        "tss": 11,
+        "distance_km": 11.6
+      },
+      "VirtualRide": {
+        "duration_decimal_hours": 10.64,
+        "count": 10,
+        "tss": 583,
+        "distance_km": 324.6
+      },
+      "WeightTraining": {
+        "duration_decimal_hours": 0.84,
+        "count": 1,
+        "tss": 11,
+        "distance_km": 0.0
+      },
+      "Workout": {
+        "duration_decimal_hours": 1.53,
+        "count": 1,
+        "tss": 27,
+        "distance_km": 5.1
+      }
+    }
+  },
+  "current_status": {
+    "fitness": {
+      "ctl": 74.0,
+      "atl": 81.01,
+      "tsb": -7.01,
+      "ramp_rate": 2.76,
+      "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
+    },
+    "thresholds": {
+      "eftp": 314.2,
+      "w_prime": 25453,
+      "w_prime_kj": 25.5,
+      "p_max": 1355,
+      "vo2max": null,
+      "sports": {
+        "cycling": {
+          "lthr": 172,
+          "max_hr": 192,
+          "threshold_pace": null,
+          "pace_units": null,
+          "ftp": 330,
+          "ftp_indoor": 330
+        },
+        "run": {
+          "lthr": 172,
+          "max_hr": 192,
+          "threshold_pace": null,
+          "pace_units": null,
+          "ftp": null,
+          "ftp_indoor": null
+        },
+        "swim": {
+          "lthr": 171,
+          "max_hr": 188,
+          "threshold_pace": 0.8333333,
+          "pace_units": "SECS_100M",
+          "ftp": null,
+          "ftp_indoor": null
+        }
+      }
+    },
+    "current_metrics": {
+      "weight_kg": 79.4,
+      "resting_hr": 52,
+      "hrv": 108.0,
+      "sleep_quality": null,
+      "sleep_hours": 8.78,
+      "sleep_formatted": "8h47m"
+    }
+  },
+  "derived_metrics": {
+    "recovery_index": 0.96,
+    "hrv_baseline_7d": 101.9,
+    "rhr_baseline_7d": 47,
+    "hrv_baseline_28d": 99.5,
+    "rhr_baseline_28d": 46.0,
+    "latest_hrv": 108.0,
+    "latest_rhr": 52,
+    "acwr": 1.08,
+    "acwr_interpretation": "optimal",
+    "monotony": 1.7,
+    "monotony_interpretation": "normal (primary sport 1.6, total 1.7 inflated by multi-sport)",
+    "primary_sport": "cycling",
+    "primary_sport_monotony": 1.6,
+    "primary_sport_tss_7d": 594.0,
+    "effective_monotony": 1.6,
+    "multi_sport_detected": true,
+    "strain": 1074.0,
+    "stress_tolerance": 6.3,
+    "load_recovery_ratio": 6.6,
+    "tss_7d_total": 632.0,
+    "tss_28d_total": 2344.0,
+    "zone_distribution_7d": {
+      "z1_hours": 4.93,
+      "z2_hours": 6.09,
+      "z3_hours": 0.99,
+      "z4_plus_hours": 1.69,
+      "total_hours": 13.69
+    },
+    "grey_zone_percentage": 7.2,
+    "grey_zone_note": "Gray Zone % (Z3/tempo) - minimize in polarized training",
+    "quality_intensity_percentage": 12.3,
+    "quality_intensity_note": "Quality Intensity % (Z4+/threshold+) - target ~20% in polarized training",
+    "polarisation_index": 0.8,
+    "polarisation_note": "Easy time (Z1+Z2) / Total - target ~80% in polarized training",
+    "hard_days_this_week": 3,
+    "hard_days_note": "Power ladder: z3+ >= 30min, z4+ >= 10min, z5+ >= 5min, z6+ >= 2min, z7 >= 1min. HR fallback (when no power): z4+ >= 10min, z5+ >= 5min. Per Seiler 3-zone model + Foster. HR-based days flagged with intensity_basis: hr",
+    "seiler_tid_7d": {
+      "z1_seconds": 39654,
+      "z2_seconds": 3549,
+      "z3_seconds": 6074,
+      "z1_pct": 80.5,
+      "z2_pct": 7.2,
+      "z3_pct": 12.3,
+      "polarization_index": 2.14,
+      "classification": "Polarized"
+    },
+    "seiler_tid_7d_primary": {
+      "z1_seconds": 31126,
+      "z2_seconds": 3549,
+      "z3_seconds": 6074,
+      "z1_pct": 76.4,
+      "z2_pct": 8.7,
+      "z3_pct": 14.9,
+      "polarization_index": 2.12,
+      "classification": "Polarized",
+      "sport": "cycling"
+    },
+    "seiler_tid_28d": {
+      "z1_seconds": 164061,
+      "z2_seconds": 11379,
+      "z3_seconds": 22576,
+      "z1_pct": 82.9,
+      "z2_pct": 5.7,
+      "z3_pct": 11.4,
+      "polarization_index": 2.22,
+      "classification": "Polarized"
+    },
+    "seiler_tid_28d_primary": {
+      "z1_seconds": 115975,
+      "z2_seconds": 10884,
+      "z3_seconds": 21709,
+      "z1_pct": 78.1,
+      "z2_pct": 7.3,
+      "z3_pct": 14.6,
+      "polarization_index": 2.19,
+      "classification": "Polarized",
+      "sport": "cycling"
+    },
+    "capability": {
+      "durability": {
+        "mean_decoupling_7d": null,
+        "mean_decoupling_28d": 0.27,
+        "high_drift_count_7d": 0,
+        "high_drift_count_28d": 0,
+        "qualifying_sessions_7d": 1,
+        "qualifying_sessions_28d": 8,
+        "trend": null,
+        "note": "Steady-state power sessions only (VI <= 1.05, VI > 0, >= 90min, power data). Negative decoupling = strong durability. Trend compares 7d vs 28d mean (+/-1% = stable)."
+      },
+      "efficiency_factor": {
+        "mean_ef_7d": 1.69,
+        "mean_ef_28d": 1.68,
+        "qualifying_sessions_7d": 4,
+        "qualifying_sessions_28d": 18,
+        "trend": "stable",
+        "note": "Steady-state cycling sessions only (VI <= 1.05, VI > 0, >= 20min, power+HR data). Rising EF = improving aerobic efficiency. Compare like-for-like sessions only \u2014 EF varies with intensity. Trend compares 7d vs 28d mean (+/-0.03 = stable)."
+      },
+      "hrrc": {
+        "mean_hrrc_7d": null,
+        "mean_hrrc_28d": 32.3,
+        "qualifying_sessions_7d": 0,
+        "qualifying_sessions_28d": 6,
+        "trend": null,
+        "note": "HRRc = heart rate recovery (largest 60s HR drop in bpm after exceeding threshold HR for >1 min). Higher = better parasympathetic recovery. Null when threshold not reached, recording stopped before cooldown, or no HR data. Trend: 7d mean vs 28d mean, >10% = meaningful (min 1 session/7d, 3 sessions/28d). Display only \u2014 not wired into readiness_decision signals."
+      },
+      "tid_comparison": {
+        "classification_7d": "Polarized",
+        "classification_28d": "Polarized",
+        "pi_7d": 2.14,
+        "pi_28d": 2.22,
+        "pi_delta": -0.08,
+        "drift": "consistent",
+        "note": "Compares 7d vs 28d Seiler TID to detect distribution shifts. pi_delta positive = more polarized acutely."
+      }
+    },
+    "consistency_index": 0.86,
+    "consistency_details": {
+      "planned_days": 7,
+      "completed_days": 6,
+      "matched_days": 6,
+      "planned_dates": [
+        "2026-04-01",
+        "2026-04-02",
+        "2026-04-03",
+        "2026-04-04",
+        "2026-04-05",
+        "2026-04-06",
+        "2026-04-07"
+      ],
+      "completed_dates": [
+        "2026-04-01",
+        "2026-04-02",
+        "2026-04-03",
+        "2026-04-04",
+        "2026-04-05",
+        "2026-04-06"
+      ]
+    },
+    "phase_detection": {
+      "phase": "Build",
+      "confidence": "medium",
+      "reason_codes": [
+        "BUILD_RESUMING_AFTER_DELOAD"
+      ],
+      "basis": {
+        "stream_1": {
+          "ctl_slope": 0.1,
+          "acwr_trend": "falling",
+          "hard_day_pattern": 2.5,
+          "weeks_available": 4
+        },
+        "stream_2": {
+          "planned_tss_delta": 0.91,
+          "hard_sessions_planned": 2,
+          "race_proximity": 75,
+          "next_week_load": 1.28,
+          "plan_coverage_current_week": 1.0,
+          "plan_coverage_next_week": 1.4
+        },
+        "data_quality": "good",
+        "stream_agreement": null
+      },
+      "previous_phase": "Deload",
+      "phase_duration_weeks": 0,
+      "dossier_declared": null,
+      "dossier_agreement": null
+    },
+    "phase_detected": "Build",
+    "phase_triggers": [
+      "BUILD_RESUMING_AFTER_DELOAD"
+    ],
+    "seasonal_context": "Late Base / Build",
+    "benchmark_indoor": {
+      "current_ftp": 330,
+      "ftp_8_weeks_ago": null,
+      "benchmark_index": null,
+      "benchmark_percentage": null,
+      "seasonal_expected": null
+    },
+    "benchmark_outdoor": {
+      "current_ftp": 330,
+      "ftp_8_weeks_ago": null,
+      "benchmark_index": null,
+      "benchmark_percentage": null,
+      "seasonal_expected": null
+    },
+    "eftp": 314.2,
+    "w_prime": 25453,
+    "w_prime_kj": 25.5,
+    "p_max": 1355,
+    "power_model_source": "wellness.sportInfo",
+    "vo2max": null,
+    "calculation_timestamp": "2026-04-07T10:38:21.203342",
+    "data_quality": {
+      "hrv_data_points": 7,
+      "rhr_data_points": 7,
+      "activities_7d": 13,
+      "activities_28d": 46,
+      "planned_workouts_7d": 10,
+      "ftp_history_days": {
+        "indoor": 0,
+        "outdoor": 0
+      }
+    }
+  },
+  "recent_activities": [
+    {
+      "id": "i137582159",
+      "date": "2026-04-06T06:09:15",
+      "type": "VirtualRide",
+      "name": "Ride Cave: Tirreno Adriatico 2026 - Stage 2: Camaiore \u2013 San Gimignano (179/205)",
+      "duration_hours": 1.5,
+      "distance_km": 46.67,
+      "tss": 110,
+      "intensity_factor": 85.757576,
+      "avg_power": 268,
+      "normalized_power": 283,
+      "avg_hr": 152,
+      "max_hr": 170,
+      "avg_cadence": 96.95243,
+      "avg_speed": 31.1,
+      "max_speed": 72.3,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 1450.2,
+      "calories": 1449,
+      "carbs_used": 260,
+      "carbs_ingested": 93,
+      "variability_index": 1.0559702,
+      "decoupling": 3.7536087,
+      "efficiency_factor": 1.8618422,
+      "hrrc": null,
+      "elevation_m": 1045.6002,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 341,
+          "z2_time": 638,
+          "z3_time": 1180,
+          "z4_time": 3246,
+          "z5_time": 0
+        },
+        "power_zones": {
+          "z1_time": 1084,
+          "z2_time": 434,
+          "z3_time": 1688,
+          "z4_time": 2178,
+          "z5_time": 2,
+          "z6_time": 19,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "i137384209",
+      "date": "2026-04-05T06:53:19",
+      "type": "VirtualRide",
+      "name": "Ride Cave: Tirreno Adriatico 2026 - Stage 2: Camaiore \u2013 San Gimignano (133/205)",
+      "duration_hours": 2.0,
+      "distance_km": 62.05,
+      "tss": 87,
+      "intensity_factor": 65.757576,
+      "avg_power": 215,
+      "normalized_power": 217,
+      "avg_hr": 126,
+      "max_hr": 135,
+      "avg_cadence": 73.04886,
+      "avg_speed": 31.0,
+      "max_speed": 47.5,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 1548.5,
+      "calories": 1549,
+      "carbs_used": 257,
+      "carbs_ingested": 124,
+      "variability_index": 1.0093024,
+      "decoupling": 2.085449,
+      "efficiency_factor": 1.7222222,
+      "hrrc": null,
+      "elevation_m": 660.60004,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 369,
+          "z2_time": 6836,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0
+        },
+        "power_zones": {
+          "z1_time": 322,
+          "z2_time": 6551,
+          "z3_time": 328,
+          "z4_time": 4,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "i137241305",
+      "date": "2026-04-04T14:57:17",
+      "type": "VirtualRide",
+      "name": "Ride Cave: Tirreno Adriatico 2026 - Stage 2: Camaiore \u2013 San Gimignano (71/205)",
+      "duration_hours": 1.0,
+      "distance_km": 34.0,
+      "tss": 43,
+      "intensity_factor": 65.15151,
+      "avg_power": 215,
+      "normalized_power": 215,
+      "avg_hr": 130,
+      "max_hr": 143,
+      "avg_cadence": 78.88263,
+      "avg_speed": 33.9,
+      "max_speed": 38.6,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 775.9,
+      "calories": 775,
+      "carbs_used": 163,
+      "carbs_ingested": 63,
+      "variability_index": 1.0,
+      "decoupling": 0.6422432,
+      "efficiency_factor": 1.6538461,
+      "hrrc": null,
+      "elevation_m": 76.200005,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 38,
+          "z2_time": 3331,
+          "z3_time": 236,
+          "z4_time": 0,
+          "z5_time": 0
+        },
+        "power_zones": {
+          "z1_time": 14,
+          "z2_time": 3562,
+          "z3_time": 29,
+          "z4_time": 0,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "i137231006",
+      "date": "2026-04-04T13:43:54",
+      "type": "VirtualRide",
+      "name": "Ride Cave: Tirreno Adriatico 2026 - Stage 2: Camaiore \u2013 San Gimignano (37/205)",
+      "duration_hours": 1.12,
+      "distance_km": 36.78,
+      "tss": 80,
+      "intensity_factor": 84.545456,
+      "avg_power": 237,
+      "normalized_power": 279,
+      "avg_hr": 140,
+      "max_hr": 171,
+      "avg_cadence": 67.52188,
+      "avg_speed": 32.9,
+      "max_speed": 60.9,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 954.9,
+      "calories": 954,
+      "carbs_used": 228,
+      "carbs_ingested": 67,
+      "variability_index": 1.1772152,
+      "decoupling": 1.8179578,
+      "efficiency_factor": 1.9928571,
+      "hrrc": null,
+      "elevation_m": 463.99997,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 606,
+          "z2_time": 1402,
+          "z3_time": 849,
+          "z4_time": 1168,
+          "z5_time": 0
+        },
+        "power_zones": {
+          "z1_time": 1947,
+          "z2_time": 597,
+          "z3_time": 229,
+          "z4_time": 68,
+          "z5_time": 1184,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "i137216490",
+      "date": "2026-04-04T12:47:34",
+      "type": "WeightTraining",
+      "name": "Chez nous",
+      "duration_hours": 0.84,
+      "distance_km": 0.0,
+      "tss": 11,
+      "intensity_factor": 36.17538,
+      "avg_power": null,
+      "normalized_power": null,
+      "avg_hr": 93,
+      "max_hr": 124,
+      "avg_cadence": null,
+      "avg_speed": null,
+      "max_speed": null,
+      "avg_pace": null,
+      "avg_temp": 30.0,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": null,
+      "calories": 395,
+      "carbs_used": null,
+      "carbs_ingested": null,
+      "variability_index": null,
+      "decoupling": null,
+      "efficiency_factor": null,
+      "hrrc": null,
+      "elevation_m": null,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 3028,
+          "z2_time": 0,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "i137040506",
+      "date": "2026-04-03T16:35:54",
+      "type": "Ride",
+      "name": "Training Session",
+      "duration_hours": 0.68,
+      "distance_km": 11.6,
+      "tss": 11,
+      "intensity_factor": 39.649117,
+      "avg_power": null,
+      "normalized_power": null,
+      "avg_hr": 101,
+      "max_hr": 121,
+      "avg_cadence": 58.379707,
+      "avg_speed": 16.9,
+      "max_speed": 29.0,
+      "avg_pace": null,
+      "avg_temp": 22.0,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": null,
+      "calories": 284,
+      "carbs_used": null,
+      "carbs_ingested": null,
+      "variability_index": null,
+      "decoupling": null,
+      "efficiency_factor": null,
+      "hrrc": null,
+      "elevation_m": 39.0,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 2448,
+          "z2_time": 6,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0
+        }
+      }
+    },
+    {
+      "id": "i136968500",
+      "date": "2026-04-03T11:13:36",
+      "type": "VirtualRide",
+      "name": "Ride Cave: Tirreno Adriatico 2026 - Stage 1: Lido di Camaiore \u2013 Lido di Camaiore TUDOR ITT (34.25/11.4)",
+      "duration_hours": 1.0,
+      "distance_km": 34.25,
+      "tss": 42,
+      "intensity_factor": 64.84849,
+      "avg_power": 214,
+      "normalized_power": 214,
+      "avg_hr": 123,
+      "max_hr": 133,
+      "avg_cadence": 51.747158,
+      "avg_speed": 34.2,
+      "max_speed": 42.0,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 771.3,
+      "calories": 772,
+      "carbs_used": 161,
+      "carbs_ingested": 0,
+      "variability_index": 1.0,
+      "decoupling": 0.78614616,
+      "efficiency_factor": 1.7398374,
+      "hrrc": null,
+      "elevation_m": 147.8,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 524,
+          "z2_time": 3084,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0
+        },
+        "power_zones": {
+          "z1_time": 26,
+          "z2_time": 3582,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "i136816336",
+      "date": "2026-04-02T20:24:33",
+      "type": "Workout",
+      "name": "Sp\u00e9cifik",
+      "duration_hours": 1.53,
+      "distance_km": 5.12,
+      "tss": 27,
+      "intensity_factor": 42.04659,
+      "avg_power": null,
+      "normalized_power": null,
+      "avg_hr": 101,
+      "max_hr": 150,
+      "avg_cadence": 61.0,
+      "avg_speed": 3.4,
+      "max_speed": 23.1,
+      "avg_pace": null,
+      "avg_temp": 25.0,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": null,
+      "calories": 631,
+      "carbs_used": null,
+      "carbs_ingested": null,
+      "variability_index": null,
+      "decoupling": null,
+      "efficiency_factor": null,
+      "hrrc": null,
+      "elevation_m": 0.0,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 5493,
+          "z2_time": 7,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "i136658810",
+      "date": "2026-04-02T06:06:05",
+      "type": "VirtualRide",
+      "name": "Ride Cave: Volta ao Algarve 2026 Stage 5 (153/153)",
+      "duration_hours": 1.42,
+      "distance_km": 37.46,
+      "tss": 59,
+      "intensity_factor": 64.242424,
+      "avg_power": 212,
+      "normalized_power": 212,
+      "avg_hr": 129,
+      "max_hr": 136,
+      "avg_cadence": 95.603355,
+      "avg_speed": 26.3,
+      "max_speed": 81.5,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 1087.0,
+      "calories": 1087,
+      "carbs_used": 171,
+      "carbs_ingested": 52,
+      "variability_index": 1.0,
+      "decoupling": 2.3965633,
+      "efficiency_factor": 1.6434108,
+      "hrrc": null,
+      "elevation_m": 875.6002,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 59,
+          "z2_time": 5049,
+          "z3_time": 20,
+          "z4_time": 0,
+          "z5_time": 0
+        },
+        "power_zones": {
+          "z1_time": 31,
+          "z2_time": 5097,
+          "z3_time": 0,
+          "z4_time": 0,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "i136578384",
+      "date": "2026-04-01T19:26:15",
+      "type": "VirtualRide",
+      "name": "Evening Virtual Ride",
+      "duration_hours": 0.25,
+      "distance_km": 0.0,
+      "tss": 20,
+      "intensity_factor": 88.181816,
+      "avg_power": 249,
+      "normalized_power": 291,
+      "avg_hr": 140,
+      "max_hr": 171,
+      "avg_cadence": 90.6113,
+      "avg_speed": null,
+      "max_speed": null,
+      "avg_pace": null,
+      "avg_temp": 24.0,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 225.3,
+      "calories": 246,
+      "carbs_used": 96,
+      "carbs_ingested": null,
+      "variability_index": 1.1686747,
+      "decoupling": 0.7605214,
+      "efficiency_factor": 2.0785713,
+      "hrrc": null,
+      "elevation_m": 0.0,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 62,
+          "z2_time": 273,
+          "z3_time": 421,
+          "z4_time": 152,
+          "z5_time": 0
+        },
+        "power_zones": {
+          "z1_time": 206,
+          "z2_time": 358,
+          "z3_time": 174,
+          "z4_time": 63,
+          "z5_time": 41,
+          "z6_time": 42,
+          "z7_time": 24
+        }
+      }
+    },
+    {
+      "id": "i136561858",
+      "date": "2026-04-01T16:32:56",
+      "type": "VirtualRide",
+      "name": "Power Meter Comparison Test",
+      "duration_hours": 0.5,
+      "distance_km": 16.66,
+      "tss": 22,
+      "intensity_factor": 66.666664,
+      "avg_power": 208,
+      "normalized_power": 220,
+      "avg_hr": 129,
+      "max_hr": 148,
+      "avg_cadence": 93.95452,
+      "avg_speed": 33.3,
+      "max_speed": 46.3,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 374.0,
+      "calories": 373,
+      "carbs_used": 102,
+      "carbs_ingested": 0,
+      "variability_index": 1.0576923,
+      "decoupling": -4.2369566,
+      "efficiency_factor": 1.7054263,
+      "hrrc": null,
+      "elevation_m": 130.6,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 169,
+          "z2_time": 1127,
+          "z3_time": 507,
+          "z4_time": 0,
+          "z5_time": 0
+        },
+        "power_zones": {
+          "z1_time": 737,
+          "z2_time": 645,
+          "z3_time": 421,
+          "z4_time": 0,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "i136514783",
+      "date": "2026-04-01T12:56:22",
+      "type": "VirtualRide",
+      "name": "Ride Cave: Circuit Gilles-Villeneuve",
+      "duration_hours": 0.5,
+      "distance_km": 16.74,
+      "tss": 22,
+      "intensity_factor": 66.969696,
+      "avg_power": 209,
+      "normalized_power": 221,
+      "avg_hr": 133,
+      "max_hr": 149,
+      "avg_cadence": 95.983925,
+      "avg_speed": 33.4,
+      "max_speed": 46.3,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 377.4,
+      "calories": 377,
+      "carbs_used": 103,
+      "carbs_ingested": 0,
+      "variability_index": 1.0574163,
+      "decoupling": -6.34065,
+      "efficiency_factor": 1.6616541,
+      "hrrc": null,
+      "elevation_m": 140.0,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 11,
+          "z2_time": 1232,
+          "z3_time": 561,
+          "z4_time": 0,
+          "z5_time": 0
+        },
+        "power_zones": {
+          "z1_time": 690,
+          "z2_time": 658,
+          "z3_time": 452,
+          "z4_time": 4,
+          "z5_time": 0,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    },
+    {
+      "id": "i136417384",
+      "date": "2026-04-01T05:54:28",
+      "type": "VirtualRide",
+      "name": "Ride Cave: Volta ao Algarve 2026 Stage 5 (116/153)",
+      "duration_hours": 1.33,
+      "distance_km": 39.97,
+      "tss": 98,
+      "intensity_factor": 85.757576,
+      "avg_power": 257,
+      "normalized_power": 283,
+      "avg_hr": 146,
+      "max_hr": 167,
+      "avg_cadence": 94.84302,
+      "avg_speed": 30.0,
+      "max_speed": 65.8,
+      "avg_pace": null,
+      "avg_temp": null,
+      "weather": null,
+      "humidity": null,
+      "wind_speed": null,
+      "work_kj": 1234.2,
+      "calories": 1235,
+      "carbs_used": 255,
+      "carbs_ingested": null,
+      "variability_index": 1.1011673,
+      "decoupling": 2.0363922,
+      "efficiency_factor": 1.9383562,
+      "hrrc": null,
+      "elevation_m": 840.4002,
+      "feel": null,
+      "rpe": null,
+      "zone_distribution": {
+        "hr_zones": {
+          "z1_time": 324,
+          "z2_time": 1393,
+          "z3_time": 914,
+          "z4_time": 2173,
+          "z5_time": 0
+        },
+        "power_zones": {
+          "z1_time": 1710,
+          "z2_time": 421,
+          "z3_time": 228,
+          "z4_time": 2444,
+          "z5_time": 1,
+          "z6_time": 0,
+          "z7_time": 0
+        }
+      }
+    }
+  ],
+  "wellness_data": [
+    {
+      "date": "2026-04-01",
+      "weight_kg": 79.8,
+      "resting_hr": 43,
+      "hrv_rmssd": 109.0,
+      "hrv_sdnn": null,
+      "sleep_hours": 7.37,
+      "sleep_formatted": "7h22m",
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": 48.0,
+      "vo2max": null
+    },
+    {
+      "date": "2026-04-02",
+      "weight_kg": 79.3,
+      "resting_hr": 45,
+      "hrv_rmssd": 96.0,
+      "hrv_sdnn": null,
+      "sleep_hours": 7.63,
+      "sleep_formatted": "7h38m",
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": 50.0,
+      "vo2max": null
+    },
+    {
+      "date": "2026-04-03",
+      "weight_kg": 79.6,
+      "resting_hr": 45,
+      "hrv_rmssd": 91.0,
+      "hrv_sdnn": null,
+      "sleep_hours": 7.88,
+      "sleep_formatted": "7h53m",
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": 50.0,
+      "vo2max": null
+    },
+    {
+      "date": "2026-04-04",
+      "weight_kg": 79.2,
+      "resting_hr": 47,
+      "hrv_rmssd": 110.0,
+      "hrv_sdnn": null,
+      "sleep_hours": 8.37,
+      "sleep_formatted": "8h22m",
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": 45.0,
+      "vo2max": null
+    },
+    {
+      "date": "2026-04-05",
+      "weight_kg": 78.9,
+      "resting_hr": 50,
+      "hrv_rmssd": 93.0,
+      "hrv_sdnn": null,
+      "sleep_hours": 7.7,
+      "sleep_formatted": "7h42m",
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": 48.0,
+      "vo2max": null
+    },
+    {
+      "date": "2026-04-06",
+      "weight_kg": 79.4,
+      "resting_hr": 47,
+      "hrv_rmssd": 106.0,
+      "hrv_sdnn": null,
+      "sleep_hours": 7.5,
+      "sleep_formatted": "7h30m",
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": 48.0,
+      "vo2max": null
+    },
+    {
+      "date": "2026-04-07",
+      "weight_kg": null,
+      "resting_hr": 52,
+      "hrv_rmssd": 108.0,
+      "hrv_sdnn": null,
+      "sleep_hours": 8.78,
+      "sleep_formatted": "8h47m",
+      "sleep_quality": null,
+      "sleep_score": null,
+      "mental_energy": null,
+      "fatigue": null,
+      "soreness": null,
+      "avg_sleeping_hr": 47.0,
+      "vo2max": null
+    }
+  ],
+  "planned_workouts": [
+    {
+      "id": 102175525,
+      "date": "2026-04-07",
+      "name": "FatMax",
+      "type": "WORKOUT",
+      "planned_tss": 42,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "description": "- 60m 65% 80-100rpm"
+    },
+    {
+      "id": 102175624,
+      "date": "2026-04-08",
+      "name": "Aerobic Base + Late Load",
+      "type": "WORKOUT",
+      "planned_tss": 65,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description": "- 10m 60% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67% 90-100rpm\n- 20m 70% 90-100rpm\n- 10m 58% 90-100rpm"
+    },
+    {
+      "id": 99804922,
+      "date": "2026-04-09",
+      "name": "Threshold 3x16",
+      "type": "WORKOUT",
+      "planned_tss": 105,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": "5m @165W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d716m @313W / 8m rec | 1m @165W",
+      "description": "- 5m 50% 80-100rpm\n- 4m 65% 80-100rpm\n- 3m 75% 80-100rpm\n- 2m 85% 80-100rpm\n- 1m 95% 95-105rpm\n- 2m 55% 80-100rpm\n\n3x\n- 16m 95% 80-100rpm\n- 8m 50% 80-100rpm\n\n- 1m 50% 80-100rpm"
+    },
+    {
+      "id": 102175542,
+      "date": "2026-04-10",
+      "name": "FatMax+",
+      "type": "WORKOUT",
+      "planned_tss": 53,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
+      "workout_summary": null,
+      "description": "- 75m 65% 80-100rpm"
+    },
+    {
+      "id": 99297376,
+      "date": "2026-04-11",
+      "name": "VO2 5x4",
+      "type": "WORKOUT",
+      "planned_tss": 82,
+      "duration_hours": 1.12,
+      "duration_formatted": "1h7m",
+      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 5\u00d74m @369W / 4m rec | 10m @156W",
+      "description": "- 5m 55% 90rpm\n- 4m 65% 90rpm\n- 3m 75% 90rpm\n- 2m 85% 90rpm\n- 1m 95% 95rpm\n- 2m 55% 90rpm\n\n5x\n- 4m 112% 90-100rpm\n- 4m 50% 80-100rpm\n\n- 10m ramp 50-45% 80-100rpm"
+    },
+    {
+      "id": 99804927,
+      "date": "2026-04-13",
+      "name": "Sweet Spot 2x35",
+      "type": "WORKOUT",
+      "planned_tss": 119,
+      "duration_hours": 1.68,
+      "duration_formatted": "1h41m",
+      "workout_summary": "5m @165W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 2\u00d735m @297W / 7m rec",
+      "description": "- 5m 50% 80-100rpm\n- 4m 65% 80-100rpm\n- 3m 75% 80-100rpm\n- 2m 85% 80-100rpm\n- 1m 95% 95-105rpm\n- 2m 55% 80-100rpm\n\n2x\n- 35m 90% 80-100rpm\n- 7m 50% 80-100rpm"
+    },
+    {
+      "id": 100779657,
+      "date": "2026-04-14",
+      "name": "Easy Circulation Spin",
+      "type": "WORKOUT",
+      "planned_tss": 31,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
+      "workout_summary": null,
+      "description": "- 15m 53% 90-100rpm\n- 30m 60% 90-100rpm\n- 15m 50% 90-100rpm"
+    },
+    {
+      "id": 99804929,
+      "date": "2026-04-15",
+      "name": "Threshold 4x12",
+      "type": "WORKOUT",
+      "planned_tss": 111,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": "5m @165W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 4\u00d712m @323W / 6m rec | 1m @165W"
+    },
+    {
+      "id": 99705116,
+      "date": "2026-04-16",
+      "name": "Aerobic Support Ride",
+      "type": "WORKOUT",
+      "planned_tss": 44,
+      "duration_hours": 1.17,
+      "duration_formatted": "1h10m",
+      "workout_summary": null,
+      "description_preview": "- 5m 55% 90-100rpm\n- 10m 58% 90-100rpm\n- 2m30 55% 90-100rpm"
+    },
+    {
+      "id": 99297390,
+      "date": "2026-04-17",
+      "name": "VO2 3x8",
+      "type": "WORKOUT",
+      "planned_tss": 87,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
+      "workout_summary": "5m @181W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 3\u00d78m @353W / 8m rec | 10m @156W"
+    },
+    {
+      "id": 99705121,
+      "date": "2026-04-18",
+      "name": "Long Ride",
+      "type": "WORKOUT",
+      "planned_tss": 114,
+      "duration_hours": 3.0,
+      "duration_formatted": "3h",
+      "workout_summary": null,
+      "description_preview": "- 10m 55% 90-100rpm\n- 25m 60% 90-100rpm\n- 2m 72%"
+    },
+    {
+      "id": 99705119,
+      "date": "2026-04-19",
+      "name": "Aerobic Base + Late Load",
+      "type": "WORKOUT",
+      "planned_tss": 65,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
+      "workout_summary": null,
+      "description_preview": "- 10m 60% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67% 90-100rpm"
+    }
+  ],
+  "workout_summary_stats": {
+    "attempted": 12,
+    "success": 5,
+    "patternA": 5,
+    "patternB": 0,
+    "bail_no_workout_doc": 0,
+    "bail_no_match": 7
+  },
+  "weekly_summary": {
+    "total_training_hours": 13.68,
+    "total_training_formatted": "13h41m",
+    "total_tss": 632,
+    "activities_count": 13,
+    "avg_hrv": 101.9,
+    "avg_resting_hr": 47.0
+  },
+  "race_calendar": {
+    "next_race": {
+      "name": "OG Classique",
+      "date": "2026-06-21",
+      "category": "RACE_A",
+      "type": "GravelRide",
+      "days_until": 75,
+      "moving_time_seconds": null,
+      "distance_meters": null
+    },
+    "all_races": [
+      {
+        "name": "OG Classique",
+        "date": "2026-06-21",
+        "category": "RACE_A",
+        "type": "GravelRide",
+        "days_until": 75,
+        "moving_time_seconds": null,
+        "distance_meters": null
+      }
+    ],
+    "taper_alert": {
+      "active": false
+    },
+    "race_week": {
+      "active": false
+    }
+  }
+}
