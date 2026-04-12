@@ -15,27 +15,37 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-12T12:31:26.212744",
+    "last_updated": "2026-04-12T13:45:00.982276",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
   },
-  "alerts": [],
+  "alerts": [
+    {
+      "metric": "rhr",
+      "value": 52,
+      "severity": "warning",
+      "threshold": "\u2191\u22655bpm vs baseline (46.9)",
+      "context": "RHR 52 is 5.1bpm above baseline. Monitor \u2014 alarm if persists >2 days.",
+      "persistence_days": 1,
+      "tier": 1
+    }
+  ],
   "readiness_decision": {
-    "recommendation": "go",
-    "priority": 3,
+    "recommendation": "modify",
+    "priority": 2,
     "signals": {
       "hrv": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 99.5,
-        "delta_pct": null
+        "status": "green",
+        "value": 96.0,
+        "baseline_7d": 99.0,
+        "delta_pct": -3.0
       },
       "rhr": {
-        "status": "unavailable",
-        "value": null,
-        "baseline_7d": 46,
-        "delta_bpm": null
+        "status": "red",
+        "value": 52,
+        "baseline_7d": 46.9,
+        "delta_bpm": 5.1
       },
       "sleep": {
         "status": "green",
@@ -51,8 +61,8 @@
         "value": null
       },
       "ri": {
-        "status": "unavailable",
-        "value": null
+        "status": "green",
+        "value": 0.87
       },
       "tsb": {
         "status": "green",
@@ -60,10 +70,10 @@
       }
     },
     "signal_summary": {
-      "green": 3,
+      "green": 5,
       "amber": 0,
-      "red": 0,
-      "unavailable": 4
+      "red": 1,
+      "unavailable": 1
     },
     "phase_context": {
       "phase": "Deload",
@@ -72,14 +82,23 @@
       "modifier_applied": "default"
     },
     "race_week_defers": false,
-    "modification": null,
-    "reason": "P3 green light. 3 green, 0 amber (threshold 2), 0 red. Note: 4 signals unavailable \u2014 limited data.",
+    "modification": {
+      "triggers": [
+        "rhr"
+      ],
+      "suggested_adjustments": {
+        "intensity": "reduce",
+        "volume": "preserve",
+        "cap_zone": null
+      }
+    },
+    "reason": "P2 signal count. 1 red (rhr), 0 amber ().",
     "alarm_refs": []
   },
   "history": {
     "available": true,
     "last_generated": "2026-03-11",
-    "age_days": 31,
+    "age_days": 32,
     "total_months": 13,
     "history_confidence": "high"
   },
@@ -127,7 +146,7 @@
       "eftp": 313.9,
       "w_prime": 25427,
       "w_prime_kj": 25.4,
-      "p_max": 1353,
+      "p_max": 1186,
       "vo2max": null,
       "sports": {
         "cycling": {
@@ -158,21 +177,21 @@
     },
     "current_metrics": {
       "weight_kg": 78.8,
-      "resting_hr": 48,
-      "hrv": null,
+      "resting_hr": 52,
+      "hrv": 96.0,
       "sleep_quality": null,
       "sleep_hours": 7.68,
       "sleep_formatted": "7h41m"
     }
   },
   "derived_metrics": {
-    "recovery_index": null,
-    "hrv_baseline_7d": 99.5,
-    "rhr_baseline_7d": 46,
-    "hrv_baseline_28d": 100.3,
-    "rhr_baseline_28d": 45.3,
-    "latest_hrv": null,
-    "latest_rhr": null,
+    "recovery_index": 0.87,
+    "hrv_baseline_7d": 99.0,
+    "rhr_baseline_7d": 46.9,
+    "hrv_baseline_28d": 100.1,
+    "rhr_baseline_28d": 45.6,
+    "latest_hrv": 96.0,
+    "latest_rhr": 52,
     "acwr": 0.94,
     "acwr_interpretation": "optimal",
     "monotony": 1.72,
@@ -184,7 +203,7 @@
     "multi_sport_detected": true,
     "strain": 953.0,
     "stress_tolerance": 5.5,
-    "load_recovery_ratio": null,
+    "load_recovery_ratio": 6.4,
     "tss_7d_total": 554.0,
     "tss_28d_total": 2356.0,
     "zone_distribution_7d": {
@@ -320,7 +339,7 @@
           "planned_tss_delta": null,
           "hard_sessions_planned": 0,
           "race_proximity": 70,
-          "next_week_load": 1.28,
+          "next_week_load": 1.35,
           "plan_coverage_current_week": 0.0,
           "plan_coverage_next_week": 1.4
         },
@@ -354,13 +373,13 @@
     "eftp": 313.9,
     "w_prime": 25427,
     "w_prime_kj": 25.4,
-    "p_max": 1353,
+    "p_max": 1186,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-12T12:31:26.211993",
+    "calculation_timestamp": "2026-04-12T13:45:00.981602",
     "data_quality": {
-      "hrv_data_points": 6,
-      "rhr_data_points": 6,
+      "hrv_data_points": 7,
+      "rhr_data_points": 7,
       "activities_7d": 11,
       "activities_28d": 48,
       "planned_workouts_7d": 6,
@@ -1012,8 +1031,8 @@
     {
       "date": "2026-04-12",
       "weight_kg": 78.8,
-      "resting_hr": null,
-      "hrv_rmssd": null,
+      "resting_hr": 52,
+      "hrv_rmssd": 96.0,
       "hrv_sdnn": null,
       "sleep_hours": 7.68,
       "sleep_formatted": "7h41m",
@@ -1022,58 +1041,69 @@
       "mental_energy": null,
       "fatigue": null,
       "soreness": null,
-      "avg_sleeping_hr": null,
+      "avg_sleeping_hr": 50.0,
       "vo2max": null
     }
   ],
   "planned_workouts": [
     {
-      "id": 99804927,
+      "id": 103844558,
       "date": "2026-04-13",
+      "name": "FatMax+",
+      "type": "WORKOUT",
+      "planned_tss": 52,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
+      "workout_summary": null,
+      "description": "- 75m freeride 62-67% 80-100rpm"
+    },
+    {
+      "id": 99804927,
+      "date": "2026-04-14",
       "name": "Sweet Spot 2x35",
       "type": "WORKOUT",
       "planned_tss": 119,
       "duration_hours": 1.68,
       "duration_formatted": "1h41m",
       "workout_summary": "5m @165W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 2\u00d735m @297W / 7m rec",
-      "description": "- 5m 50% 80-100rpm\n- 4m 65% 80-100rpm\n- 3m 75% 80-100rpm\n- 2m 85% 80-100rpm\n- 1m 95% 95-105rpm\n- 2m 55% 80-100rpm\n\n2x\n- 35m 90% 80-100rpm\n- 7m 50% 80-100rpm"
+      "description": "- 5m 50% 80-100rpm\n- 4m 65% 80-100rpm\n- 3m 75% 80-100rpm\n- 2m 85% 80-100rpm\n- 1m 95% 95-105rpm\n- 2m 55% 80-100rpm\n\n2x\n- 35m freeride 90% 80-100rpm\n- 7m 50% 80-100rpm"
     },
     {
-      "id": 100779657,
-      "date": "2026-04-14",
-      "name": "Easy Circulation Spin",
+      "id": 103844774,
+      "date": "2026-04-15",
+      "name": "FatMax+",
       "type": "WORKOUT",
-      "planned_tss": 31,
-      "duration_hours": 1.0,
-      "duration_formatted": "1h",
+      "planned_tss": 52,
+      "duration_hours": 1.25,
+      "duration_formatted": "1h15m",
       "workout_summary": null,
-      "description": "- 15m 53% 90-100rpm\n- 30m 60% 90-100rpm\n- 15m 50% 90-100rpm"
+      "description": "- 75m freeride 62-67% 80-100rpm"
     },
     {
       "id": 99804929,
-      "date": "2026-04-15",
+      "date": "2026-04-16",
       "name": "Threshold 4x12",
       "type": "WORKOUT",
       "planned_tss": 111,
       "duration_hours": 1.5,
       "duration_formatted": "1h30m",
       "workout_summary": "5m @165W | 4m @214W | 3m @247W | 2m @280W | 1m @313W | 2m @181W | 4\u00d712m @323W / 6m rec | 1m @165W",
-      "description": "- 5m 50% 80-100rpm\n- 4m 65% 80-100rpm\n- 3m 75% 80-100rpm\n- 2m 85% 80-100rpm\n- 1m 95% 95-105rpm\n- 2m 55% 80-100rpm\n\n4x\n- 12m 98% 80-100rpm\n- 6m 50% 80-100rpm\n\n- 1m 50% 80-100rpm"
+      "description": "- 5m 50% 80-100rpm\n- 4m 65% 80-100rpm\n- 3m 75% 80-100rpm\n- 2m 85% 80-100rpm\n- 1m 95% 95-105rpm\n- 2m 55% 80-100rpm\n\n4x\n- 12m freeride 98% 80-100rpm\n- 6m 50% 80-100rpm\n\n- 1m 50% 80-100rpm"
     },
     {
-      "id": 99705116,
-      "date": "2026-04-16",
-      "name": "Aerobic Support Ride",
+      "id": 99705119,
+      "date": "2026-04-17",
+      "name": "Aerobic Base + Late Load",
       "type": "WORKOUT",
-      "planned_tss": 44,
-      "duration_hours": 1.17,
-      "duration_formatted": "1h10m",
+      "planned_tss": 65,
+      "duration_hours": 1.5,
+      "duration_formatted": "1h30m",
       "workout_summary": null,
-      "description": "- 5m 55% 90-100rpm\n- 10m 58% 90-100rpm\n- 2m30 55% 90-100rpm\n- 12m30 60% 90-100rpm\n- 5m 55% 90-100rpm\n- 5m 62% 90-100rpm\n- 10m 65% 90-100rpm\n- 5m 70% 90-100rpm\n- 10m 68% 90-100rpm\n- 5m 47.5% 90-100rpm"
+      "description": "- 10m 60% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67% 90-100rpm\n- 20m 70% 90-100rpm\n- 10m 58% 90-100rpm"
     },
     {
       "id": 99297390,
-      "date": "2026-04-17",
+      "date": "2026-04-18",
       "name": "VO2 3x8",
       "type": "WORKOUT",
       "planned_tss": 87,
@@ -1084,7 +1114,7 @@
     },
     {
       "id": 99705121,
-      "date": "2026-04-18",
+      "date": "2026-04-19",
       "name": "Long Ride",
       "type": "WORKOUT",
       "planned_tss": 114,
@@ -1092,17 +1122,6 @@
       "duration_formatted": "3h",
       "workout_summary": null,
       "description": "- 10m 55% 90-100rpm\n- 25m 60% 90-100rpm\n- 2m 72%\n- 10m 55% 90-100rpm\n- 30m 62% 90-100rpm\n- 2m 72%\n- 3m 55% 90-100rpm\n- 20m 65% 90-100rpm\n- 5m 55% 90-100rpm\n- 2m 72%\n- 28m 65% 90-100rpm\n- 2m 72%\n- 18m 55% 90-100rpm\n- 2m 72%\n- 3m 50% 90-100rpm\n- 8m 69% 90-100rpm\n- 10m 55% 90-100rpm"
-    },
-    {
-      "id": 99705119,
-      "date": "2026-04-19",
-      "name": "Aerobic Base + Late Load",
-      "type": "WORKOUT",
-      "planned_tss": 65,
-      "duration_hours": 1.5,
-      "duration_formatted": "1h30m",
-      "workout_summary": null,
-      "description": "- 10m 60% 90-100rpm\n- 20m 65% 90-100rpm\n- 30m 67% 90-100rpm\n- 20m 70% 90-100rpm\n- 10m 58% 90-100rpm"
     }
   ],
   "workout_summary_stats": {
@@ -1118,8 +1137,8 @@
     "total_training_formatted": "14h27m",
     "total_tss": 554,
     "activities_count": 11,
-    "avg_hrv": 99.5,
-    "avg_resting_hr": 46.0
+    "avg_hrv": 99.0,
+    "avg_resting_hr": 46.9
   },
   "race_calendar": {
     "next_race": {
