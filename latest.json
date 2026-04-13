@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-13T11:46:50.240759",
+    "last_updated": "2026-04-13T12:54:18.013458",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -390,7 +390,7 @@
     "p_max": 1187,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-13T11:46:50.240054",
+    "calculation_timestamp": "2026-04-13T12:54:18.012666",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -479,9 +479,9 @@
       "work_kj": 951.9,
       "calories": 951,
       "carbs_used": 178,
-      "carbs_ingested": null,
+      "carbs_ingested": 0,
       "variability_index": 1.0331753,
-      "decoupling": 2.602075,
+      "decoupling": 1.732055,
       "efficiency_factor": 1.7301587,
       "hrrc": null,
       "elevation_m": 605.0,
@@ -1216,11 +1216,11 @@
       "date": "2026-04-15",
       "name": "FatMax+",
       "type": "WORKOUT",
-      "planned_tss": 52,
+      "planned_tss": 53,
       "duration_hours": 1.25,
       "duration_formatted": "1h15m",
       "workout_summary": null,
-      "description": "- 75m freeride 62-67% 80-100rpm"
+      "description": "- 75m 65% 80-100rpm"
     },
     {
       "id": 99804929,
