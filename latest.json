@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-16T12:57:27.727731",
+    "last_updated": "2026-04-16T14:49:58.921031",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -108,7 +108,7 @@
   "history": {
     "available": true,
     "last_generated": "2026-03-11",
-    "age_days": 35,
+    "age_days": 36,
     "total_months": 13,
     "history_confidence": "high"
   },
@@ -165,10 +165,10 @@
       "fitness_source": "Decayed from yesterday (today's planned workouts not yet completed)"
     },
     "thresholds": {
-      "eftp": 314.2,
-      "w_prime": 25453,
-      "w_prime_kj": 25.5,
-      "p_max": 1187,
+      "eftp": 313.9,
+      "w_prime": 25427,
+      "w_prime_kj": 25.4,
+      "p_max": 1186,
       "vo2max": null,
       "sports": {
         "cycling": {
@@ -198,7 +198,7 @@
       }
     },
     "current_metrics": {
-      "weight_kg": 79.6,
+      "weight_kg": 80.3,
       "resting_hr": 53,
       "hrv": 86.0,
       "sleep_quality": null,
@@ -357,7 +357,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.42,
+          "planned_tss_delta": 1.37,
           "hard_sessions_planned": 3,
           "race_proximity": 66,
           "next_week_load": 0.51,
@@ -391,13 +391,13 @@
       "benchmark_percentage": null,
       "seasonal_expected": null
     },
-    "eftp": 314.2,
-    "w_prime": 25453,
-    "w_prime_kj": 25.5,
-    "p_max": 1187,
+    "eftp": 313.9,
+    "w_prime": 25427,
+    "w_prime_kj": 25.4,
+    "p_max": 1186,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-16T12:57:27.726942",
+    "calculation_timestamp": "2026-04-16T14:49:58.920301",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -983,7 +983,7 @@
     },
     {
       "date": "2026-04-16",
-      "weight_kg": null,
+      "weight_kg": 80.3,
       "resting_hr": 53,
       "hrv_rmssd": 86.0,
       "hrv_sdnn": null,
@@ -1000,15 +1000,15 @@
   ],
   "planned_workouts": [
     {
-      "id": 104733944,
+      "id": 104748215,
       "date": "2026-04-16",
-      "name": "Aerobic Support Ride",
+      "name": "Easy Circulation Spin",
       "type": "WORKOUT",
-      "planned_tss": 44,
-      "duration_hours": 1.17,
-      "duration_formatted": "1h10m",
+      "planned_tss": 31,
+      "duration_hours": 1.0,
+      "duration_formatted": "1h",
       "workout_summary": null,
-      "description": "- 5m 55% 90-100rpm\n- 10m 58% 90-100rpm\n- 2m30 55% 90-100rpm\n- 12m30 60% 90-100rpm\n- 5m 55% 90-100rpm\n- 5m 62% 90-100rpm\n- 10m 65% 90-100rpm\n- 5m 70% 90-100rpm\n- 10m 68% 90-100rpm\n- 5m 47.5% 90-100rpm"
+      "description": "- 15m 53% 90-100rpm\n- 30m 60% 90-100rpm\n- 15m 50% 90-100rpm"
     },
     {
       "id": 99804929,
@@ -1082,9 +1082,9 @@
       "name": "Reduced Threshold",
       "type": "WORKOUT",
       "planned_tss": 83,
-      "duration_hours": 1.33,
-      "duration_formatted": "1h20m",
-      "workout_summary": "5m @165W | 4m @198W | 3m @231W | 2m @264W | 1m @297W | 1m @181W | 1m @313W | 1m @181W | 3\u00d710m @313W / 7m rec | 11m @181W"
+      "duration_hours": 1.34,
+      "duration_formatted": "1h20m30s",
+      "workout_summary": "5m @165W | 4m @198W | 3m @231W | 2m @264W | 1m @297W | 1m @181W | 1m @313W | 1m @181W | 3\u00d710m @313W / 7m30s rec | 10m @181W"
     }
   ],
   "workout_summary_stats": {
