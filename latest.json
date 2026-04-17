@@ -15,7 +15,7 @@
   },
   "metadata": {
     "athlete_id": "REDACTED",
-    "last_updated": "2026-04-17T11:34:11.923062",
+    "last_updated": "2026-04-17T12:41:22.041956",
     "data_range_days": 7,
     "extended_range_days": 28,
     "version": "3.78"
@@ -359,7 +359,7 @@
           "weeks_available": 4
         },
         "stream_2": {
-          "planned_tss_delta": 1.67,
+          "planned_tss_delta": 1.68,
           "hard_sessions_planned": 3,
           "race_proximity": 65,
           "next_week_load": 0.51,
@@ -399,7 +399,7 @@
     "p_max": 1186,
     "power_model_source": "wellness.sportInfo",
     "vo2max": null,
-    "calculation_timestamp": "2026-04-17T11:34:11.922373",
+    "calculation_timestamp": "2026-04-17T12:41:22.041192",
     "data_quality": {
       "hrv_data_points": 7,
       "rhr_data_points": 7,
@@ -1017,11 +1017,11 @@
       "date": "2026-04-17",
       "name": "Threshold 4x12",
       "type": "WORKOUT",
-      "planned_tss": 118,
-      "duration_hours": 1.78,
-      "duration_formatted": "1h47m",
-      "workout_summary": "20m | 4\u00d712m @323W / 6m rec | 15m",
-      "description": "- Press lap 20m Z1 80-100rpm\n\n4x\n- 12m 98% 80-100rpm\n- 6m 50% 80-100rpm\n\n- Press lap 15m Z1 80-100rpm"
+      "planned_tss": 121,
+      "duration_hours": 1.87,
+      "duration_formatted": "1h52m",
+      "workout_summary": "20m | 4\u00d712m @323W / 6m rec | 20m",
+      "description": "- Press lap 20m Z1 80-100rpm\n\n4x\n- 12m 98% 80-100rpm\n- 6m 50% 80-100rpm\n\n- Press lap 20m Z1 80-100rpm"
     },
     {
       "id": 99297390,
